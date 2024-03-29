@@ -1,47 +1,41 @@
-# Astro Starter Kit: Minimal
+# Naetharu-Codes
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Welcome to the repository for Naetharu-Codes, my personal website and blog dedicated to sharing my coding journey, projects, and insights into web development. This site is built with the modern web framework, [Astro](https://astro.build/), leveraging its capabilities for creating fast, SEO-friendly, and content-rich websites.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+For dynamic features and interactivity, I've incorporated React components, known as "islands", allowing for a blend of static and dynamic content without compromising on site performance. Styling is meticulously crafted using Tailwind CSS, providing a utility-first CSS framework for designing custom and responsive layouts with ease.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Features
 
-## 🚀 Project Structure
+- **Astro Framework**: Utilizes Astro for efficient, scalable, and fast web development.
+- **React Island Components**: Enhances interactivity through React-based "islands", enabling dynamic content in a predominantly static site.
+- **Tailwind CSS**: Employs Tailwind CSS for intuitive and flexible styling, speeding up the design process with utility-first classes.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Local Development
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+To get started with local development, follow these steps:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+1. Clone the repository to your local machine:
+   ```
+   git clone https://github.com/yourusername/naetharu-codes.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd naetharu-codes
+   ```
+3. Install the dependencies:
+   ```
+   npm install
+   ```
+4. Start the development server:
+   ```
+   npm run dev
+   ```
+   This command will start a local development server and open up a browser window. Most changes are reflected live without needing to restart the server.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Contributing
 
-Any static assets, like images, can be placed in the `public/` directory.
+This is a personal project and not open to contributions.
 
-## 🧞 Commands
+## License
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+No licence is provided. This is a private repo and all code belongs to James Bridge.
