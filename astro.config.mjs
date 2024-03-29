@@ -1,8 +1,10 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
+import preact from "@astrojs/preact";
 
 import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()]
+  site: "https://main--naetharu-astro-blog-demo.netlify.app/",
+  integrations: [preact(), tailwind()]
 });
