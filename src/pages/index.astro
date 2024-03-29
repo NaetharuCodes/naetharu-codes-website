@@ -1,5 +1,13 @@
 ---
+import Section from "../components/Section";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import StandardButton from "../components/StandardButton";
+import MenuBulletText from "../components/MenuBulletText";
 
+// IMAGES
+import highFantasyImg from "../assets/wild-landscape-0001.jpg";
+import aiWorldMakerImg from "../assets/digital-earth-0001.jpg";
+import vampireImg from "../assets/vampire-0001.jpg";
 ---
 
 <html lang="en">
@@ -8,9 +16,59 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>RPG Playbook</title>
   </head>
   <body>
-    <h1 class="bg-slate-200">Astro</h1>
+    <BaseLayout>
+      <Section
+        title="Immerse Yourself in Exciting RPG Adventures"
+        text="Discover a new level of immersion with RPG Playbook's AI technology. Create and explore captivating worlds in pen and paper RPG games."
+        url={highFantasyImg.src}
+        alt="High Fantasy Castle"
+        id="high-fantasy-hero"
+        className="mb-14"
+      >
+        <StandardButton
+          id="high-fantasy-hero-primary"
+          text="Learn More"
+          type="primary"
+          classes="mr-4"
+        />
+        <StandardButton
+          id="high-fantasy-hero-secondary"
+          text="Sign Up"
+          type="secondary"
+        />
+      </Section>
+      <Section
+        title="Immerse Yourself in Exciting RPG Adventures"
+        text="With RPG Playbook's AI-driven world-building tool, games-masters can effortlessly create immersive and captivating RPG worlds for their players to explore. Say goodbye to hours of manual preparation and let our advanced technology do the work for you.."
+        url={aiWorldMakerImg.src}
+        alt="High Fantasy Castle"
+        id="high-fantasy-hero"
+        className="mb-14"
+      >
+        <ul class="flex flex-col">
+          <MenuBulletText text="Effortlessly Create Engaging RPG Worlds." />
+          <MenuBulletText text="Unlease your creativity with AI assistance." />
+          <MenuBulletText
+            text="Real time creations to respond to your players choices."
+          />
+        </ul>
+      </Section>
+      <Section
+        title="Unleash Your Imagination with RPG Playbook"
+        text="Explore a world of endless possibilities with our character creation module. RPG Playbook revolutionizes the way you experience pen and paper RPG games, allowing you to create unique and captivating characters that will bring your adventures to life.."
+        url={vampireImg.src}
+        alt="High Fantasy Castle"
+        id="high-fantasy-hero"
+        className="mb-14"
+      >
+        <p>
+          Build amazing RPG games in real time. From the first steps of creating
+          a new adventure, to the final showdown, RPG Playbook guides you.
+        </p>
+      </Section>
+    </BaseLayout>
   </body>
 </html>
