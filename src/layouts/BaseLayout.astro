@@ -1,0 +1,250 @@
+---
+import BurgerMenu from "../components/BurgerMenu";
+import MenuBulletText from "../components/MenuBulletText";
+import StandardButton from "../components/StandardButton";
+import BlogCard from "../components/BlogCard";
+import DownArrowIcon from "../components/icons/DownArrowIcon";
+import FacebookIcon from "../components/icons/FacebookIcon";
+import YouTubeIcon from "../components/icons/YouTubeIcon";
+---
+
+<div
+  class="max-w-[1440px] min-h-svh mx-auto bg-slate-50 flex flex-col duration-200"
+>
+  <header class="h-[72px] bg-slate-100 flex justify-between items-center px-4">
+    <h1 class="text-2xl md:text-4xl font-bold mr-4">RPG PLAYBOOK</h1>
+    <nav class="hidden lg:flex">
+      <ul class="flex items-center">
+        <li class="mx-2">
+          <a class="mb-4" href="/rpg-playbook">Explore RPGs</a>
+        </li>
+        <li class="mx-2"><a href="/rpg-playbook/about">Create Worlds</a></li>
+        <li class="mx-2">
+          <a href="/rpg-playbook/characters">Join Community</a>
+        </li>
+        <button id="more-btn" class="flex items-center mx-2"
+          >More <DownArrowIcon
+            id="more-menu-icon"
+            className="ml-2 mt-1"
+          /></button
+        >
+      </ul>
+    </nav>
+    <div class="hidden lg:flex justify-end grow">
+      <StandardButton
+        client:load
+        id="sign-up-btn"
+        text="Sign Up"
+        type="primary"
+        classes="mr-4"
+      />
+      <StandardButton
+        client:load
+        id="learn-more-btn"
+        text="Learn More"
+        type="secondary"
+      />
+    </div>
+    <BurgerMenu client:load />
+  </header>
+  <div id="mobile-menu" class="flex flex-col lg:hidden p-10 text-lg">
+    <a class="mb-4" href="#">Explore RPGs</a>
+    <a class="mb-4" href="#">Create Worlds</a>
+    <a class="mb-4" href="#">Join Community</a>
+    <button id="mobile-more-btn" class="mb-4 flex items-center"
+      >More <DownArrowIcon
+        id="mobile-more-menu-icon"
+        className="ml-2 mt-1 -rotate-90"
+      /></button
+    >
+  </div>
+  <div id="mobile-details-menu" class="hidden p-10 lg:flex lg:pt-0 lg:pr-0">
+    <div class="flex flex-col md:flex-row mb-10 lg:w-3/5">
+      <div class="md:w-1/2 flex flex-col">
+        <h2 class="text-sm font-bold mt-4">RPG Themes</h2>
+        <ul class="lg:flex lg:flex-col justify-between grow">
+          <MenuBulletText
+            text="High Fantasy"
+            subtext="Magical adventures in a world of wizards and dragons."
+          />
+          <MenuBulletText
+            text="Low Fantasy"
+            subtext="Quasi-historical adventures in a world of swords and kings."
+          />
+          <MenuBulletText
+            text="Dystopian Future"
+            subtext="Adventures in a future of dark technology."
+          />
+          <MenuBulletText
+            text="Urban Horror"
+            subtext="Venture into a hidden world behind the veil of the everyday."
+          />
+        </ul>
+      </div>
+      <div class="md:w-1/2 flex flex-col">
+        <h2 class="text-sm font-bold mt-4">Game Resources</h2>
+        <ul class="lg:flex lg:flex-col justify-between grow">
+          <MenuBulletText
+            text="Character Builder"
+            subtext="Create unqiue characters and NPCs for your adventures."
+          />
+          <MenuBulletText
+            text="Item Forge"
+            subtext="Craft powerful items for your quests."
+          />
+          <MenuBulletText
+            text="Location Maker"
+            subtext="Build detailed locations for your games."
+          />
+          <MenuBulletText
+            text="Campaign Writer"
+            subtext="Use powerful AI driven tools to create a unqiue and dynamic campaign."
+          />
+        </ul>
+      </div>
+    </div>
+    <div class="bg-gray-100 mt-4 lg:mt-0 p-6 lg:w-2/5 lg:pt-4">
+      <h2 class="text-xl font-bold mb-6 lg:text-sm lg:mb-0">
+        Feature from Blog
+      </h2>
+      <div class="flex flex-col">
+        <BlogCard
+          url="https://cdn.wccftech.com/wp-content/uploads/2016/04/Warhold2.jpg"
+          alt="placeholder"
+          title="10 Games Master Tips"
+          text="Great tips to help you run exciting games for your players."
+          link="/rpg-playbook/blog/10-games-master-tips"
+          className="lg:m-0 lg:p-0 lg:mt-6"
+        />
+        <BlogCard
+          url="https://assets-global.website-files.com/5efc0159f9a97ba05a8b2902/5f337f9d5472f84f010a3672_welcome-to-rpg-maker-web.jpg"
+          alt="placeholder"
+          title="Forge amazing games"
+          text="How to build fantastic worlds and adventures for your players."
+          link="/rpg-playbook/blog/10-games-master-tips"
+          className="lg:m-0 lg:p-0 lg:mt-6"
+        />
+      </div>
+    </div>
+    <div class="flex flex-col lg:hidden">
+      <StandardButton
+        id="mobile-sign-up-btn"
+        text="Sign Up"
+        type="primary"
+        classes="mt-12 mb-4"
+      />
+      <StandardButton
+        id="mobile-learn-more-btn"
+        text="Learn More"
+        type="secondary"
+      />
+    </div>
+  </div>
+
+  <nav class="flex">
+    <!-- LEFT SECTION WITH LINKS -->
+    <div class=""></div>
+
+    <!-- BLOG FEED -->
+    <div></div>
+  </nav>
+  <div class="grow p-4 lg:py-20 lg:px-14">
+    <slot />
+  </div>
+  <footer
+    class="min-h-[72px] bg-slate-100 p-4 flex flex-col justify-center items-start"
+  >
+    <div class="flex flex-col lg:flex-row justify-between">
+      <h2 class="font-bold text-2xl">RPG Playbook</h2>
+      <div class="my-10">
+        <h3 class="font-semibold text-lg">About Us</h3>
+        <ul>
+          <li class="my-2">Contact</li>
+          <li class="my-2">Support</li>
+          <li class="my-2">FAQ</li>
+          <li class="my-2">Blog</li>
+          <li class="my-2">Discord</li>
+        </ul>
+      </div>
+      <div class="my-10">
+        <h3 class="font-semibold text-lg">Resources</h3>
+        <ul>
+          <li class="my-2">Tutorials</li>
+          <li class="my-2">Documentation</li>
+          <li class="my-2">Community</li>
+          <li class="my-2">Events</li>
+          <li class="my-2">Partners</li>
+        </ul>
+      </div>
+      <div class="my-10">
+        <h3 class="font-semibold text-lg">Careers</h3>
+        <ul>
+          <li class="my-2">Press</li>
+          <li class="my-2">Investors</li>
+          <li class="my-2">Terms</li>
+          <li class="my-2">Privacy</li>
+          <li class="my-2">Cookies</li>
+        </ul>
+      </div>
+      <div class="my-10 w-full">
+        <h3 class="font-semibold text-lg mb-4">Subscribe</h3>
+        <p class="text-sm mb-4">
+          Join our mailing list for the latest updates and news
+        </p>
+        <form action="submit" class="flex flex-col">
+          <input
+            type="email"
+            placeholder="Enter email address"
+            class="border-[1px] border-black h-[48px] p-2 bg-transparent"
+          />
+          <button
+            class="border-[1px] border-black h-[48px] mt-4 font-semibold"
+            type="submit"
+            disabled>Subscribe</button
+          >
+          <p class="text-xs mt-4">
+            By subscribing you agree to our Privacy Policy and consent to
+            receive updates from us.
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="border-b-[1px] border-black w-full h-1"></div>
+    <div class="my-4">
+      <div class="flex"><FacebookIcon className="mr-4" /><YouTubeIcon /></div>
+      <div class="flex flex-col mt-4">
+        <a href="" class="text-sm underline mb-4">Privacy Policy</a>
+        <a href="" class="text-sm underline mb-4">Terms of Service</a>
+        <a href="" class="text-sm underline mb-4">Cookie Policy</a>
+      </div>
+    </div>
+    <p>&copy; RPG Playbook. All rights reserved.</p>
+  </footer>
+</div>
+
+<script>
+  document.getElementById("sign-up-btn")?.addEventListener("click", () => {
+    console.log("Sign Up button clicked");
+  });
+
+  document.getElementById("learn-more-btn")?.addEventListener("click", () => {
+    console.log("Learn More button clicked");
+  });
+
+  document.getElementById("burger-menu-btn")?.addEventListener("click", () => {
+    document.getElementById("mobile-menu")?.classList.toggle("hidden");
+  });
+
+  document.getElementById("mobile-more-btn")?.addEventListener("click", () => {
+    document.getElementById("mobile-details-menu")?.classList.toggle("hidden");
+    document
+      .getElementById("mobile-more-menu-icon")
+      ?.classList.toggle("-rotate-90");
+  });
+
+  document.getElementById("more-btn")?.addEventListener("click", () => {
+    const menu = document.getElementById("mobile-details-menu");
+    menu?.classList.toggle("lg:hidden");
+    document.getElementById("more-menu-icon")?.classList.toggle("-rotate-90");
+  });
+</script>
