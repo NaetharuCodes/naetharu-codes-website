@@ -5,86 +5,74 @@ import Title from "../components/Title.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Naetharu Codes: James Bridge Personal Site</title>
-  </head>
-  <body>
-    <BaseLayout>
-      <div class="max-w-[700px] mx-auto">
-        <Title text="James Bridge" />
+<BaseLayout>
+  <div class="max-w-[700px] mx-auto">
+    <Title text="James Bridge" />
 
-        <Text>
-          I'm a software developer based in the UK. I have a background working
-          in both the civil engineering and finance sector. Currently I am
-          working as a full stack developer at RPG Playbook, building AI driven
-          tools for the tabletop games industry.
-        </Text>
+    <Text>
+      I'm a software developer based in the UK. I have a background working in
+      both the civil engineering and finance sector. Currently I am working as a
+      full stack developer at RPG Playbook, building AI driven tools for the
+      tabletop games industry.
+    </Text>
 
-        <Title text="Key Skill" className="mt-10" />
-        <List
-          items={[
-            "React",
-            "TypeScript",
-            "Node.js",
-            "Express",
-            "Astro",
-            "Tailwind CSS",
-            "Material UI",
-            "SQL",
-            "Prisma",
-            "Git & GitHub",
-            "Azure",
-            "Firebase",
-            "Terraform",
-            "Open AI API",
-            "Stable Diffusion AI Training",
-            "Grok AI API",
-          ]}
-        />
+    <Title text="Key Skill" className="mt-10" />
+    <List
+      items={[
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "Astro",
+        "Tailwind CSS",
+        "Material UI",
+        "SQL",
+        "Prisma",
+        "Git & GitHub",
+        "Azure",
+        "Firebase",
+        "Terraform",
+        "Open AI API",
+        "Stable Diffusion AI Training",
+        "Grok AI API",
+      ]}
+    />
 
-        <Title text="Previous Projects" className="mt-10" />
-        <Text>
-          <strong>Hylas Research:</strong>
-          I am a co-founder of Hylas Research, a company that develops AI driven
-          solutions using a range of technologies including machine learning, computer
-          vision and natural language processing.
-        </Text>
-        <Text>
-          <strong>RPG Playbook:</strong>
-          RPG Playbook is the first customer facing product from Hylas Research.
-          Using a combination of AI driven tooling (Open AI, Grok, Stability AI)
-          including custom trained models, we are building a platform to help Games
-          Masters run their games more effectively.
-        </Text>
-        <Text>
-          <strong>Devops:</strong>
-          I lead a project to migrate the Azure infrastructure for The AMX. This
-          involved significant archetectural changes to the existing infrastructure,
-          as well as the introduction of Terraform to manage the infrastructure as
-          code.
-        </Text>
-        <Text>
-          <strong>Greenfield:</strong>
-          I worked in a team of three building a greenfield project called AMX Zero.
-          An application used to help pension funds carry out their enviromental
-          reporting. The project was built using React, with an Express API.
-        </Text>
-        <Text>
-          <strong>Legacy:</strong>
-          I worked on a legacy project called Curator. I developed a new React based
-          front end for a major portion of the Curator reporting application.
-        </Text>
-        <Text>
-          <strong>Payment Processing System:</strong>
-          I worked with a small team building a payment processing platform designed
-          for small businesses.
-        </Text>
-      </div>
-    </BaseLayout>
-  </body>
-</html>
+    <Title text="Previous Projects" className="mt-10" />
+    <Text>
+      <strong>Hylas Research:</strong>
+      I am a co-founder of Hylas Research, a company that develops AI driven solutions
+      using a range of technologies including machine learning, computer vision and
+      natural language processing.
+    </Text>
+    <Text>
+      <strong>RPG Playbook:</strong>
+      RPG Playbook is the first customer facing product from Hylas Research. Using
+      a combination of AI driven tooling (Open AI, Grok, Stability AI) including
+      custom trained models, we are building a platform to help Games Masters run
+      their games more effectively.
+    </Text>
+    <Text>
+      <strong>Devops:</strong>
+      I lead a project to migrate the Azure infrastructure for The AMX. This involved
+      significant archetectural changes to the existing infrastructure, as well as
+      the introduction of Terraform to manage the infrastructure as code.
+    </Text>
+    <Text>
+      <strong>Greenfield:</strong>
+      I worked in a team of three building a greenfield project called AMX Zero.
+      An application used to help pension funds carry out their enviromental reporting.
+      The project was built using React, with an Express API.
+    </Text>
+    <Text>
+      <strong>Legacy:</strong>
+      I worked on a legacy project called Curator. I developed a new React based
+      front end for a major portion of the Curator reporting application.
+    </Text>
+    <Text>
+      <strong>Payment Processing System:</strong>
+      I worked with a small team building a payment processing platform designed
+      for small businesses.
+    </Text>
+  </div>
+</BaseLayout>
