@@ -1,4 +1,5 @@
 ---
+import LinksList from "../components/LinksList.astro";
 import List from "../components/List.astro";
 import Title from "../components/Title.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -13,5 +14,5 @@ const posts = allPosts.map((post) => {
 
 <BaseLayout>
   <Title text="Blog Posts" />
-  <List items={posts} links />
+  <LinksList links={posts} />
 </BaseLayout>
