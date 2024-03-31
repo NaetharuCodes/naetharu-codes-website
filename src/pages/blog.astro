@@ -1,7 +1,17 @@
 ---
+import List from "../components/List.astro";
+import Title from "../components/Title.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+const allPosts = await Astro.glob("./posts/*.md");
+const posts = allPosts.map((post) => {
+  return {
+    title: post.frontmatter.title,
+    url: post.url,
+  };
+});
 ---
 
 <BaseLayout>
-  <p>Blog page</p>
+  <Title text="Blog Posts" />
+  <List items={posts} links />
 </BaseLayout>

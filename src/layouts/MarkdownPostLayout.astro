@@ -62,10 +62,12 @@ const { frontmatter } = Astro.props;
 </script>
 
 <BaseLayout>
-  <div class="max-w-[740px] mx-auto mt-10">
-    <h1 class="font-bold text-4xl text-orange mb-6">{frontmatter.title}</h1>
+  <div>
+    <h1 class="font-bold text-4xl text-orange mb-6 text-left">
+      {frontmatter.title}
+    </h1>
     <p class="text-sm opacity-60">
-      Published on: {frontmatter.pubDate.toString().slice(0, 10)}
+      Published on: {frontmatter.pubDate}
     </p>
     <p class="text-sm opacity-60 mb-10">Written by {frontmatter.author}</p>
     <Prose>

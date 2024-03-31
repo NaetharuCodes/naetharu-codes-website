@@ -1,0 +1,23 @@
+---
+import StarIcon from "./icons/StarIcon";
+const { items } = Astro.props;
+const links: boolean = Astro.props;
+---
+
+<ul>
+  {
+    links
+      ? items.map((item: string) => (
+          <li class="my-2 flex items-center">
+            <StarIcon />
+            <a href={item.url}>{item.title}</a>
+          </li>
+        ))
+      : items.map((item: string) => (
+          <li class="my-2 flex items-center">
+            <StarIcon />
+            {item}
+          </li>
+        ))
+  }
+</ul>
