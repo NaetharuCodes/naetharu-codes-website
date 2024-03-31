@@ -1,4 +1,7 @@
 ---
+import List from "../components/List.astro";
+import Text from "../components/Text.astro";
+import Title from "../components/Title.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
@@ -12,7 +15,64 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </head>
   <body>
     <BaseLayout>
-      <p>Page Content</p>
+      <div class="max-w-[700px] mx-auto mt-10">
+        <Title text="James Bridge" />
+
+        <Text>
+          I'm a software developer based in the UK. I have a background working
+          in both the civil engineering and finance sector. Currently I am
+          working as a full stack developer at RPG Playbook, building AI driven
+          tools for the tabletop games industry.
+        </Text>
+
+        <Title text="Key Skill" />
+        <List
+          items={[
+            "React",
+            "TypeScript",
+            "Node.js",
+            "Express",
+            "Astro",
+            "Tailwind CSS",
+            "Material UI",
+            "SQL",
+            "Prisma",
+            "Git & GitHub",
+            "Azure",
+            "Firebase",
+            "Terraform",
+          ]}
+        />
+
+        <Title text="Previous Projects" />
+        <Text>
+          Devops: When I first joined Carne I lead the migration of the AMX
+          cloud infrastructure. This involved significant archetectural changes.
+          The new deployments were done via Terraform.
+        </Text>
+        <Text>
+          Greenfield: I worked in a team of three building a greenfield project
+          called AMX Zero. An application used to help pension funds carry out
+          their enviromental reporting. The project was built using React, with
+          an Express API.
+        </Text>
+        <Text>
+          Legacy: I worked on a legacy project called Curator. I developed a new
+          React based front end for a major portion of the Curator reporting
+          application.
+          <Text>
+            Payment Processing System: I worked with a small team building a
+            payment processing platform designed for small businesses.
+          </Text>
+          <Text>
+            RPG Playbook: I am currently working on a project called RPG
+            Playbook. This is an AI driven application that allows users to
+            dynamically create content for their RPG games in real time, as well
+            as providing a range of powerful tooling to make creating and
+            running adventures easier.
+          </Text>
+        </Text>
+      </div>
     </BaseLayout>
   </body>
 </html>

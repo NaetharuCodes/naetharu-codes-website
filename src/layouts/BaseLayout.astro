@@ -3,14 +3,30 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
 
+<script>
+  // Calculate scrollbar width
+  const scrollbarWidth =
+    window.innerWidth - document.documentElement.clientWidth;
+
+  // Set a CSS custom property with the scrollbar width
+  document.documentElement.style.setProperty(
+    "--scrollbar-width",
+    `${scrollbarWidth}px`
+  );
+</script>
+
 <html>
   <head>
-    <title>Test Website</title>
+    <title>Naetharu Codes</title>
   </head>
-  <body class="bg-black-dark">
+  <body class="bg-black-dark overflow-y-scroll">
     <div class="max-w-[1400px] min-h-svh bg-black mx-auto flex flex-col">
       <Header />
-      <div class="p-2 md:p-4 lg:p- grow text-white-dark"><slot /></div>
+      <div
+        class="p-2 md:p-4 lg:p- grow text-white-dark max-w-[600px] mx-auto mt-4 md:mt-6 lg:mt-10 text-justify"
+      >
+        <slot />
+      </div>
       <Footer />
     </div>
   </body>
