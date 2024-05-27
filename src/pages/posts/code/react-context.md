@@ -1,10 +1,10 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../../layouts/MarkdownPostLayout.astro
 title: "React: Context Provider"
 pubDate: 17/04/2024
 description: "React Context Providers."
 author: "James Bridge"
-url: "react-context-providers"
+url: "react-context"
 tags: ["React", "Context", "development"]
 ---
 

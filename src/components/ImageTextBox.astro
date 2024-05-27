@@ -1,0 +1,12 @@
+---
+const { text, imageURL, imageDescription } = Astro.props;
+---
+
+<div class="py-4 flex flex-row">
+  <div class="grow">
+    {text.map((t: string) => <p class="mb-6 leading-8">{t}</p>)}
+  </div>
+  <div class="bg-slate-200 ml-10">
+    <img class="max-w-none" src={imageURL} alt={imageDescription} />
+  </div>
+</div>

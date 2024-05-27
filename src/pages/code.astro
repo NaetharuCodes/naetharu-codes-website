@@ -1,0 +1,28 @@
+---
+import LinksList from "../components/LinksList.astro";
+import List from "../components/List.astro";
+import Title from "../components/Title.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const allPosts = await Astro.glob("./posts/code/*.md");
+const posts = allPosts.map((post) => {
+  return {
+    title: post.frontmatter.title,
+    url: post.url,
+  };
+});
+---
+
+<BaseLayout>
+  <div class="p-4 mb-10">
+    <Title text="Code Articles" />
+    <div class="h-[200px] mb-10">
+      <img
+        class="w-full h-[200px] object-cover rounded-lg shadow-md mb-4"
+        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/bf6af25e-55db-4064-d86a-81d958604900/banner"
+        alt=""
+      />
+    </div>
+
+    <LinksList links={posts} />
+  </div>
+</BaseLayout>
