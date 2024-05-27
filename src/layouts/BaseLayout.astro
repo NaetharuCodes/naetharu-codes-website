@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import "@fontsource/poppins";
 ---
 
 <script>
@@ -21,14 +22,12 @@ import Footer from "../components/Footer.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Naetharu Codes: James Bridge Personal Site</title>
+    <title>Naetharu Codes</title>
   </head>
-  <body class="bg-black-dark overflow-y-scroll">
+  <body class="overflow-y-scroll bg-black">
     <div class="max-w-[1400px] min-h-svh bg-black mx-auto flex flex-col">
       <Header />
-      <div
-        class="p-2 md:p-4 lg:p- grow text-white-dark max-w-[600px] mx-auto mt-4 md:mt-6 lg:mt-10 text-justify"
-      >
+      <div class="grow text-white-dark text-justify flex flex-col">
         <slot />
       </div>
       <Footer />

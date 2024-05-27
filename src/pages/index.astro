@@ -6,73 +6,29 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <div class="max-w-[700px] mx-auto">
-    <Title text="James Bridge" />
-
-    <Text>
-      I'm a software developer based in the UK. I have a background working in
-      both the civil engineering and finance sector. Currently I am working as a
-      full stack developer at RPG Playbook, building AI driven tools for the
-      tabletop games industry.
-    </Text>
-
-    <Title text="Key Skill" className="mt-10" />
-    <List
-      items={[
-        "React",
-        "TypeScript",
-        "Node.js",
-        "Express",
-        "Astro",
-        "Tailwind CSS",
-        "Material UI",
-        "SQL",
-        "Prisma",
-        "Git & GitHub",
-        "Azure",
-        "Firebase",
-        "Terraform",
-        "Open AI API",
-        "Stable Diffusion AI Training",
-        "Grok AI API",
-      ]}
-    />
-
-    <Title text="Previous Projects" className="mt-10" />
-    <Text>
-      <strong>Hylas Research:</strong>
-      I am a co-founder of Hylas Research, a company that develops AI driven solutions
-      using a range of technologies including machine learning, computer vision and
-      natural language processing.
-    </Text>
-    <Text>
-      <strong>RPG Playbook:</strong>
-      RPG Playbook is the first customer facing product from Hylas Research. Using
-      a combination of AI driven tooling (Open AI, Grok, Stability AI) including
-      custom trained models, we are building a platform to help Games Masters run
-      their games more effectively.
-    </Text>
-    <Text>
-      <strong>Devops:</strong>
-      I lead a project to migrate the Azure infrastructure for The AMX. This involved
-      significant archetectural changes to the existing infrastructure, as well as
-      the introduction of Terraform to manage the infrastructure as code.
-    </Text>
-    <Text>
-      <strong>Greenfield:</strong>
-      I worked in a team of three building a greenfield project called AMX Zero.
-      An application used to help pension funds carry out their enviromental reporting.
-      The project was built using React, with an Express API.
-    </Text>
-    <Text>
-      <strong>Legacy:</strong>
-      I worked on a legacy project called Curator. I developed a new React based
-      front end for a major portion of the Curator reporting application.
-    </Text>
-    <Text>
-      <strong>Payment Processing System:</strong>
-      I worked with a small team building a payment processing platform designed
-      for small businesses.
-    </Text>
+  <div
+    class="max-w-[1400px] min-w-full grow gird grid-cols-1 h-[calc(100vh-144px)]"
+  >
+    <div class="grow min-w-full h-1/3 overflow-hidden bg-red-200">
+      <img
+        class="min-w-full max-w-none h-full object-cover"
+        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/f7e8c74c-3eba-44af-46a1-f08175841700/basic"
+        alt="coding"
+      />
+    </div>
+    <div class="grow min-w-full h-1/3 overflow-hidden bg-green-200">
+      <img
+        class="min-w-full max-w-none h-full object-cover"
+        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/00ef8628-a8e9-4d95-a812-eea4f9904500/basic"
+        alt="ai art"
+      />
+    </div>
+    <div class="grow min-w-full h-1/3 overflow-hidden bg-blue-200">
+      <img
+        class="min-w-full max-w-none h-full object-cover"
+        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/c1489e61-6082-4d7a-9bda-c78d678ccc00/basic"
+        alt="apps"
+      />
+    </div>
   </div>
 </BaseLayout>
