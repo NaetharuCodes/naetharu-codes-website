@@ -1,12 +1,18 @@
 ---
-const { text, imageURL, imageDescription } = Astro.props;
+const { text, imageURL, imageDescription, reverse } = Astro.props;
 ---
 
-<div class="py-4 flex flex-row">
-  <div class="grow">
+<div
+  class={`py-4 flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} justify-between mb-10`}
+>
+  <div class="grow text-xs md:text-sm">
     {text.map((t: string) => <p class="mb-6 leading-8">{t}</p>)}
   </div>
-  <div class="bg-slate-200 ml-10">
-    <img class="max-w-none" src={imageURL} alt={imageDescription} />
+  <div class={`bg-slate-200 ${reverse ? "md:mr-10" : "md:ml-10"}`}>
+    <img
+      class="max-w-none object-cover w-full h-full md:w-auto md:h-auto"
+      src={imageURL}
+      alt={imageDescription}
+    />
   </div>
 </div>

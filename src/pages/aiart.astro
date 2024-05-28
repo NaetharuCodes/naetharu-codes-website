@@ -4,15 +4,26 @@ import ImageTextBox from "../components/ImageTextBox.astro";
 ---
 
 <BaseLayout>
-  <div class="mt-4 p-4 lg:p-0 text-white">
-    <h2 class="text-2xl font-bold pb-2 pt-10">Stable Diffusion</h2>
-    <ImageTextBox
-      text={[
-        "This makes Stable Diffusion a unqiuely powerful tool for both artists and businesses looking to harness the power of generative art. Many of the openly available models allow for full commerical use, and the resuls that they offer can be transformative to those looking to create high quality original art.",
-        "This makes Stable Diffusion a unqiuely powerful tool for both artists and businesses looking to harness the power of generative art. Many of the openly available models allow for full commerical use, and the resuls that they offer can be transformative to those looking to create high quality original art.",
-      ]}
-      imageURL="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/99d2e9df-2bc3-46fe-88f7-c28a6f6da500/mini"
-      imageDescription="test image"
-    />
+  <div class="p-4 flex flex-col items-center justify-start grow text-white">
+    <div class="max-w-[840px]">
+      <h2 class="text-2xl font-bold pb-2 pt-10 mb-10">Stable Diffusion</h2>
+      <ImageTextBox
+        text={[
+          "This makes Stable Diffusion a unqiuely powerful tool for both artists and businesses looking to harness the power of generative art. Many of the openly available models allow for full commerical use, and the resuls that they offer can be transformative to those looking to create high quality original art.",
+          "This makes Stable Diffusion a unqiuely powerful tool for both artists and businesses looking to harness the power of generative art. Many of the openly available models allow for full commerical use, and the resuls that they offer can be transformative to those looking to create high quality original art.",
+        ]}
+        imageURL="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/99d2e9df-2bc3-46fe-88f7-c28a6f6da500/mini"
+        imageDescription="test image"
+        reverse
+      />
+      <ImageTextBox
+        text={[
+          "This makes Stable Diffusion a unqiuely powerful tool for both artists and businesses looking to harness the power of generative art. Many of the openly available models allow for full commerical use, and the resuls that they offer can be transformative to those looking to create high quality original art.",
+          "This makes Stable Diffusion a unqiuely powerful tool for both artists and businesses looking to harness the power of generative art. Many of the openly available models allow for full commerical use, and the resuls that they offer can be transformative to those looking to create high quality original art.",
+        ]}
+        imageURL="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/99d2e9df-2bc3-46fe-88f7-c28a6f6da500/mini"
+        imageDescription="test image"
+      />
+    </div>
   </div>
 </BaseLayout>
