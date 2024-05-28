@@ -5,9 +5,49 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <div>
-    <Title class="text-white" text="James Bridge" />
-    <p>Hi</p>
-    <Prose />
+  <div class="p-10 flex flex-col items-center justify-center grow">
+    <div>
+      <h1 class="text-white text-4xl">James Bridge</h1>
+      <p class="text-white my-10 max-w-[800px] leading-8">
+        I'm a UK based software engineer and technology professional. I have
+        experience working in civil engineering, finance, the public sector, and
+        the games industry. I'm currently leading the development of RPG
+        Playbook, an AI powered tool for tabletop roleplaying games.
+      </p>
+      <p class="text-white my-10 max-w-[800px] leading-8">
+        I've been working with AI tooling since 2017, and have extensive
+        experience integrating a range of AI solutions into business
+        applications. My latest project - RPG Playbook - uses a combination of
+        locally running LLM models, and custom trained Stable Diffusion models,
+        to create a tool that can generate content for tabletop roleplaying
+        games.
+      </p>
+      <div class="mb-10">
+        <h2 class="text-white text-2xl mb-2">Skills</h2>
+        <ul class="text-white list-disc pl-5 leading-8">
+          <li>Full Stack Web Development</li>
+          <li>Green Fields Projects</li>
+          <li>JavaScript/TypeScript</li>
+          <li>CSS / TailWind / MUI / MaintineUI</li>
+          <li>SQLite / PostgreSQL / MongoDB / RavenDB / Prisma</li>
+          <li>Microsoft Azure / Firebase / Fly.io</li>
+          <li>Open AI Api</li>
+          <li>Stable Diffusion Prompt Engineering & Model Tuning</li>
+          <li>Local LLM Integration</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-white text-2xl mb-2">Experience</h2>
+        <ul class="text-white list-disc pl-5 leading-8">
+          <li>Technology lead for civil engineering and highways company</li>
+          <li>Green fields application development in Finance</li>
+          <li>Dev-Ops lead for finance company migration</li>
+          <li>
+            Lead architech of RPG Playbook - an AI powered tool for the tabletop
+            games industry
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </BaseLayout>
