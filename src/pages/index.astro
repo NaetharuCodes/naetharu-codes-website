@@ -2,33 +2,44 @@
 import List from "../components/List.astro";
 import Text from "../components/Text.astro";
 import Title from "../components/Title.astro";
+import InfoText from "../components/InfoText.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
   <div
-    class="max-w-[1400px] min-w-full grow gird grid-cols-1 h-[calc(100vh-144px)]"
+    class="min-w-full grow gird grid-cols-1 lg:h-[calc(100vh-144px)] bg-white"
   >
-    <div class="grow min-w-full h-1/3 overflow-hidden bg-red-200">
-      <img
-        class="min-w-full max-w-none h-full object-cover"
-        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/f7e8c74c-3eba-44af-46a1-f08175841700/basic"
-        alt="coding"
-      />
-    </div>
-    <div class="grow min-w-full h-1/3 overflow-hidden bg-green-200">
-      <img
-        class="min-w-full max-w-none h-full object-cover"
-        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/00ef8628-a8e9-4d95-a812-eea4f9904500/basic"
-        alt="ai art"
-      />
-    </div>
-    <div class="grow min-w-full h-1/3 overflow-hidden bg-blue-200">
-      <img
-        class="min-w-full max-w-none h-full object-cover"
-        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/c1489e61-6082-4d7a-9bda-c78d678ccc00/basic"
-        alt="apps"
-      />
+    <div class="h-full flex flex-col lg:flex-row relative">
+      <div class="relative">
+        <img
+          src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/bcbfec27-109b-437f-00ec-0b64872e8e00/SDTall"
+          alt="profile picture"
+          class="object-cover h-full w-full lg:w-[800px]"
+        />
+        <h1 class="absolute text-white top-8 left-6 text-2xl z-10">
+          Hello, I am James Bridge
+        </h1>
+        <div
+          class="absolute top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,0.25)]"
+        >
+        </div>
+      </div>
+      <div class="flex flex-col justify-evenly p-10 md:pl-20 z-">
+        <InfoText text="I'm a full stack web developer" />
+        <InfoText
+          text="I have experience in the civil engineering and finance sectors"
+        />
+        <InfoText
+          text="I'm a founder of RPG Playbook - an AI powered tool for the games industry"
+        />
+        <InfoText
+          text="I've been working with AI solutions for business since 2017"
+        />
+        <InfoText
+          text="I'm passionate about AI generative art with Stable Diffusion"
+        />
+      </div>
     </div>
   </div>
 </BaseLayout>
