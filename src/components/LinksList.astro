@@ -7,9 +7,12 @@ const { links } = Astro.props;
 <ul>
   {
     links.map((link: { title: string; url: string }, index: number) => (
-      <li class="flex items-center text-white mt-2">
+      <li class="flex items-start text-white mt-2">
         <StarIcon />
-        <a class="text-white text-xs md:text-sm lg:text-base" href={link.url}>
+        <a
+          class="text-white text-xs md:text-sm lg:text-base hover:text-orange-700 duration-200"
+          href={link.url}
+        >
           {link.title}
         </a>
       </li>
