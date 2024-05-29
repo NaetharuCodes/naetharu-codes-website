@@ -62,8 +62,10 @@ const { frontmatter } = Astro.props;
 </script>
 
 <BaseLayout>
-  <div class="mb-4">
-    <h1 class="font-bold text-4xl text-orange-700 mt-2 p-4 text-left">
+  <div class="mb-4 max-w-[840px] mx-auto">
+    <h1
+      class="font-bold text-2xl lg:text-4xl text-orange-700 mt-2 p-4 text-left"
+    >
       {frontmatter.title}
     </h1>
     <p class="text-sm opacity-60 text-white p-4">

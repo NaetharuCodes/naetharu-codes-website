@@ -1,6 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ImageTextBox from "../components/ImageTextBox.astro";
+import LinksList from "../components/LinksList.astro";
+const allPosts = await Astro.glob("./posts/aiArt/*.md");
+const posts = allPosts.map((post) => {
+  return {
+    title: post.frontmatter.title,
+    url: post.url,
+  };
+});
 ---
 
 <BaseLayout>
@@ -9,21 +17,17 @@ import ImageTextBox from "../components/ImageTextBox.astro";
       <h2 class="text-2xl font-bold pb-2 pt-10 mb-10">Stable Diffusion</h2>
       <ImageTextBox
         text={[
-          "This makes Stable Diffusion a unqiuely powerful tool for both artists and businesses looking to harness the power of generative art. Many of the openly available models allow for full commerical use, and the resuls that they offer can be transformative to those looking to create high quality original art.",
-          "This makes Stable Diffusion a unqiuely powerful tool for both artists and businesses looking to harness the power of generative art. Many of the openly available models allow for full commerical use, and the resuls that they offer can be transformative to those looking to create high quality original art.",
+          "This makes Stable Diffusion a uniquely powerful tool for both artists and businesses looking to harness the power of generative art. As a local program it offers a high degree of control and security. And thanks to powerful features like Dreambooth and KoyahSS, it is possible to fine-tune or evenly completely custom-train models that specialize in a specific type of image creation.",
+          "While the learning curve can be steep, the rewards of offer are great. The ability to iterate through image ideas quickly, and to create bespoke content at both a speed and cost never before possible, makes Stable Diffusion an exciting offering for almost any individual or commercial product in need of original art.",
+          "Below are a range of my tutorials, reviews, and articles covering various aspects of image and video generation using Stable Diffusion. I also offer 1-2-1 training, and commercial services. For further information please visit my services page.",
         ]}
         imageURL="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/99d2e9df-2bc3-46fe-88f7-c28a6f6da500/mini"
         imageDescription="test image"
         reverse
       />
-      <ImageTextBox
-        text={[
-          "This makes Stable Diffusion a unqiuely powerful tool for both artists and businesses looking to harness the power of generative art. Many of the openly available models allow for full commerical use, and the resuls that they offer can be transformative to those looking to create high quality original art.",
-          "This makes Stable Diffusion a unqiuely powerful tool for both artists and businesses looking to harness the power of generative art. Many of the openly available models allow for full commerical use, and the resuls that they offer can be transformative to those looking to create high quality original art.",
-        ]}
-        imageURL="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/99d2e9df-2bc3-46fe-88f7-c28a6f6da500/mini"
-        imageDescription="test image"
-      />
+    </div>
+    <div class="">
+      <LinksList links={posts} />
     </div>
   </div>
 </BaseLayout>
