@@ -60,13 +60,13 @@ With Stable Diffusion we have some powerful tools that can aid us in working aro
 - Delayed prompting
 - Prompt blending.
 
-  These two techniques exploit the iterative nature of the diffusion model and allow us to introduce concepts in a way that minimizes the impact of concept bleeding on the final image.
+These two techniques exploit the iterative nature of the diffusion model and allow us to introduce concepts in a way that minimizes the impact of concept bleeding on the final image.
 
-  When we create a model in Stable Diffusion, we set the number of steps that the network will take. By default, we tend to use a 20-step process. The model starts off with an image that is pure noise. Then at each step it converts some portion of that noise into the target image. However, the key feature we can exploit here is that the focus on each of these iterative step’s changes over the full generation process.
+When we create a model in Stable Diffusion, we set the number of steps that the network will take. By default, we tend to use a 20-step process. The model starts off with an image that is pure noise. Then at each step it converts some portion of that noise into the target image. However, the key feature we can exploit here is that the focus on each of these iterative step’s changes over the full generation process.
 
-  The first steps are focused on the major compositional elements of the image. And as the process continues each successive step deals with smaller and more refined details. We can see this in practice by saving the results of our diffusion at each step.
+The first steps are focused on the major compositional elements of the image. And as the process continues each successive step deals with smaller and more refined details. We can see this in practice by saving the results of our diffusion at each step.
 
-  The first step fixes the overall composition of our image:
+The first step fixes the overall composition of our image:
 
 ![first step of diffusion](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/9a2f9baf-70e8-4cae-69d6-c5325ccfdd00/XLPortrait)
 
