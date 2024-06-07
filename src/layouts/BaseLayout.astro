@@ -1,20 +1,6 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import "@fontsource/poppins";
 ---
-
-<script>
-  // Calculate scrollbar width
-  const scrollbarWidth =
-    window.innerWidth - document.documentElement.clientWidth;
-
-  // Set a CSS custom property with the scrollbar width
-  document.documentElement.style.setProperty(
-    "--scrollbar-width",
-    `${scrollbarWidth}px`
-  );
-</script>
 
 <html lang="en">
   <head>
@@ -22,15 +8,11 @@ import "@fontsource/poppins";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Naetharu Codes</title>
+    <title>RPG Playbook</title>
   </head>
-  <body class="overflow-y-scroll bg-black">
-    <div class="min-h-svh bg-black mx-auto flex flex-col">
-      <Header />
-      <div class="grow text-white-dark text-justify flex flex-col">
-        <slot />
-      </div>
-      <Footer />
+  <body class="h-full bg-black">
+    <div class="grow text-white-dark text-justify flex flex-col">
+      <slot />
     </div>
   </body>
 </html>
