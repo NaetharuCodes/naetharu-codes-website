@@ -4,7 +4,7 @@ import StarIcon from "./icons/StarIcon";
 const { links } = Astro.props;
 ---
 
-<ul>
+<ul class="">
   {
     links.map((link: { title: string; url: string }, index: number) => (
       <li class="flex items-start text-white mt-2">

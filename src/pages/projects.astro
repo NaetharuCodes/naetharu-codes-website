@@ -3,15 +3,73 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <h1>My Projects</h1>
-  <ul>
-    <li>
-      <a href="https://naetharucodes.github.io/TaskApp/">Task App</a>
-    </li>
-    <li>
-      <a href="https://naetharucodes.github.io/markdown-editor/"
-        >Markdown Editor</a
+  <div
+    class="text-white w-full max-w-[800px] m-auto grow flex flex-col items-center justify-center p-4"
+  >
+    <a href="https://www.rpg-playbook.com" class="text-3xl">
+      <h1 class="mb-6 flex flex-row justify-center text-orange-700 mt-6">
+        RPG Playbook
+      </h1>
+      <div
+        class="flex flex-col md:flex-row items-center justify-between m-10 gap-10"
       >
-    </li>
-  </ul>
+        <img
+          src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/5e23cc0f-d2cb-44da-f367-fdd1f2002b00/XLPortrait"
+          alt="RPG Playbook Screenshot"
+          class="max-h-[640px]"
+        />
+        <img
+          src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/62bef899-32e9-45fa-a693-51adb213e500/XLPortrait"
+          alt="RPG Playbook Screenshot"
+          class="max-h-[640px]"
+        />
+      </div>
+
+      <p class="text-sm md:text-base">
+        RPG Playbook is an AI powered tool designed to enhance table-top RPG
+        games. Using a combination of LLM and diffusion models, in conjunction
+        with traditional software, the app allows users to create bespoke game
+        assets in real time.
+      </p>
+
+      <h2
+        class="mt-14 mb-6 flex flex-row justify-center text-xl text-orange-700"
+      >
+        The Problem
+      </h2>
+
+      <p class="text-sm md:text-base mb-6">
+        Tabletop RPG games are challenging to run. They require a significant
+        creative input. A games master is expected to design a campaign, run all
+        of the non-player characters, manage the upkeep for the mechanical side
+        of play, and to respond and adjust in real time based on the player's
+        choices.
+      </p>
+
+      <p class="text-sm md:text-base mb-6">
+        This is a daunting task even for a seasoned games master. Our aim with
+        RPG Playbook is to make this much easier. We do this by lifting the
+        creative burden from the games master. With just a few clicks the games
+        master can gnerate new and exciting assets for their game, and do so in
+        real time responding to the players specific choices within the
+        narrative.
+      </p>
+
+      <p class="text-sm md:text-base mb-6">
+        This is a daunting task even for a seasoned games master. Our aim with
+        RPG Playbook is to make this much easier. We do this by lifting the
+        creative burden from the games master. With just a few clicks the games
+        master can gnerate new and exciting assets for their game, and do so in
+        real time responding to the players specific choices within the
+        narrative.
+      </p>
+
+      <p class="text-sm md:text-base mb-6">
+        These assets can also be pre-arranged into collections, and then used to
+        create detailed and exciting campaigns. The AI aspect of the tool is
+        highly flexible, and able to create a wide range of original assets for
+        almost any kind of RPG game.
+      </p>
+    </a>
+  </div>
 </BaseLayout>
