@@ -3,6 +3,10 @@ import LinksList from "../components/LinksList.astro";
 import List from "../components/List.astro";
 import Title from "../components/Title.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import astrologo from "../assets/astro_logo.png";
+import expressjslogo from "../assets/expressjs_logo.png";
+import reactlogo from "../assets/react_logo.png";
+
 const allPosts = await Astro.glob("./posts/code/*.md");
 const posts = allPosts.map((post) => {
   return {
@@ -13,16 +17,21 @@ const posts = allPosts.map((post) => {
 ---
 
 <BaseLayout>
-  <div class="p-4 mb-10">
+  <div
+    class="text-white w-full max-w-[800px] m-auto grow flex flex-col items-center justify-start p-4"
+  >
     <Title text="Code Articles" />
-    <div class="h-[200px] mb-10">
-      <img
-        class="w-full h-[200px] object-cover rounded-lg shadow-md mb-4"
-        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/bf6af25e-55db-4064-d86a-81d958604900/banner"
-        alt=""
-      />
+    <div class="mb-10 flex flex-col md:flex-row items-center justify-center">
+      <div class="max-w-[200px] max-h=[140px]">
+        <img class="w-full" src={reactlogo.src} alt="" />
+      </div>
+      <div class="max-w-[300px]">
+        <img class="w-full" src={expressjslogo.src} alt="" />
+      </div>
+      <div class="max-w-[300px]">
+        <img class="w-full" src={astrologo.src} alt="" />
+      </div>
     </div>
-
     <LinksList links={posts} />
   </div>
 </BaseLayout>
