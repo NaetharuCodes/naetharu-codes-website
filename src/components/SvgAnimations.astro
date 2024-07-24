@@ -50,8 +50,15 @@ import { interpolate } from "flubber";
     "M20,20 L80,20 L80,80 L20,80 Z", // Square
     "M50,20 L80,80 L20,80 Z", // Triangle
     "M50,20 A30,30 0 0,1 80,50 A30,30 0 0,1 50,80 A30,30 0 0,1 20,50 A30,30 0 0,1 50,20 Z", // Circle
-    "M20,50 Q50,20 80,50 T20,50", // Wave
+    "M20,20 C20,40 30,50 50,50 C70,50 80,40 80,20 C80,40 70,80 50,80 C30,80 20,40 20,20 Z", // Cloud
+    "M50,20 C60,20 70,30 70,40 C70,50 60,60 50,60 C40,60 30,50 30,40 C30,30 40,20 50,20 M50,60 L50,80", // Balloon
+    "M50,20 L80,50 L50,80 L20,50 Z", // Water Drop
   ];
+
+  //   <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+  // <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  // <path d="M3 13.6493C3 16.6044 5.41766 19 8.4 19L16.5 19C18.9853 19 21 16.9839 21 14.4969C21 12.6503 19.8893 10.9449 18.3 10.25C18.1317 7.32251 15.684 5 12.6893 5C10.3514 5 8.34694 6.48637 7.5 8.5C4.8 8.9375 3 11.2001 3 13.6493Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  // </svg>
 
   let currentShapeIndex = 0;
 
