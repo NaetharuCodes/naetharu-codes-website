@@ -3,11 +3,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import FlipCard from "../components/FlipCard.astro";
 import ParallaxSection from "../components/ParallaxSection.astro";
 import SvgAnimations from "../components/SvgAnimations.astro";
-import image from "../assets/astro_logo.png";
+import image from "../assets/flowers.png";
+import ResponsiveGrid from "../components/ResponsiveGrid.astro";
 ---
 
 <BaseLayout>
-  <div class="flex flex-col max-w-[800px] mx-auto mt-10 text-white">
+  <div class="flex flex-col max-w-[800px] mx-auto mt-10 text-white p-4">
     <h1 class="text-orange-700 text-3xl">UI Examples</h1>
 
     <p>Some examples of fun UI elements I've created</p>
@@ -27,9 +28,11 @@ import image from "../assets/astro_logo.png";
     <div class="mb-2">
       Scroll down to see the text move with paralax over the background image
     </div>
-    <ParallaxSection backgroundUrl={image.src} speed={0.5} height="800px">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Scroll down to see the parallax effect</p>
+    <ParallaxSection backgroundUrl={image.src} speed={0.5} height="500px">
+      <div class="flex flex-col justify-between h-full">
+        <h1>A Window into Another World</h1>
+        <p>Scroll down to see the parallax effect</p>
+      </div>
       <!-- <img src={image.src} alt="" /> -->
     </ParallaxSection>
 
@@ -39,5 +42,12 @@ import image from "../assets/astro_logo.png";
       below to see the shape cycle between four states.
     </div>
     <SvgAnimations />
+
+    <h2 class="text-orange-700 text-xl mt-10 mb-6">Responsive Grid Layout</h2>
+    <div class="mb-2">
+      A flexible and responsive grid layout. Adjust the page width to see the
+      containers reposition to best fit the display.
+    </div>
+    <ResponsiveGrid />
   </div>
 </BaseLayout>

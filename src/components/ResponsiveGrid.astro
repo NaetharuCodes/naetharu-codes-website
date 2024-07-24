@@ -1,0 +1,75 @@
+---
+const items = [
+  { title: "Item 1", content: "This is the content for item 1" },
+  { title: "Item 2", content: "This is the content for item 2" },
+  { title: "Item 3", content: "This is the content for item 3" },
+  { title: "Item 4", content: "This is the content for item 4" },
+  { title: "Item 5", content: "This is the content for item 5" },
+  { title: "Item 6", content: "This is the content for item 6" },
+];
+---
+
+<div class="responsive-grid">
+  {
+    items.map((item, index) => (
+      <div class="grid-item" style={`--item-bg: hsl(${index * 60}, 70%, 80%)`}>
+        <h2>{item.title}</h2>
+        <p>{item.content}</p>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .responsive-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: start;
+    color: black;
+  }
+
+  .grid-item {
+    background-color: var(--item-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  @media (min-width: 480px) {
+    .responsive-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .responsive-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .responsive-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>

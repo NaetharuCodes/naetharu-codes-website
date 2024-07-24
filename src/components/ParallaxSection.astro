@@ -12,7 +12,8 @@ const { backgroundUrl, speed = 0.5, height = "100vh" } = Astro.props;
     id="imagediv"
   >
   </div>
-  <div class="content" style="z-index:20">
+  <div class="vignette"></div>
+  <div class="content flex flex-col h-full" style="z-index:20">
     <slot />
   </div>
 </div>
@@ -26,10 +27,10 @@ const { backgroundUrl, speed = 0.5, height = "100vh" } = Astro.props;
 
   .parallax-background {
     position: absolute;
-    top: 0;
+    top: -50%;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -50%;
     z-index: 10;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,9 +47,20 @@ const { backgroundUrl, speed = 0.5, height = "100vh" } = Astro.props;
     padding: 20px;
   }
 
+  .vignette {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+    z-index: 15;
+    pointer-events: none;
+  }
+
   @media (prefers-reduced-motion: no-preference) {
     .parallax-background {
-      transform: translateY(calc(var(--scrollY, 0) * var(--speed) * -1px));
+      transform: translateY(calc(var(--scrollY, 0) * var(--speed) * -0.5px));
     }
   }
 </style>
@@ -59,8 +71,10 @@ const { backgroundUrl, speed = 0.5, height = "100vh" } = Astro.props;
   function updateParallax() {
     parallaxElements.forEach((el) => {
       const container = el.closest(".parallax-container");
-      const rect = container!.getBoundingClientRect();
-      const scrollY = window.scrollY - rect.top + window.innerHeight / 2;
+      const rect = container.getBoundingClientRect();
+      const scrollProgress =
+        (window.scrollY - rect.top) / (rect.height - window.innerHeight);
+      const scrollY = scrollProgress * rect.height;
       (el as HTMLElement).style.setProperty("--scrollY", scrollY.toString());
     });
   }
