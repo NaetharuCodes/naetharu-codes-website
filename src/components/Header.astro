@@ -15,11 +15,10 @@ import LinkItem from "./LinkItem.astro";
   </ul>
   <button
     id="menu-burger"
-    class="flex md:hidden flex-col w-[46px] h-[42px] justify-between"
+    class="flex md:hidden flex-col w-[46px] h-[42px] justify-evenly"
   >
-    <div class="h-1 w-full bg-black"></div>
-    <div class="h-1 w-full bg-black"></div>
-    <div class="h-1 w-full bg-black"></div>
+    <div id="burger-bar-one" class="h-1 w-full bg-black burger"></div>
+    <div id="burger-bar-two" class="h-1 w-full bg-black burger"></div>
   </button>
   <div
     id="nav-modal"
@@ -44,13 +43,32 @@ import LinkItem from "./LinkItem.astro";
     }
 
     #nav-modal {
+      transition: 0.4s;
+    }
+
+    .burger {
+      animation: cross 1s 1s ease;
       transition: 0.2s;
+    }
+
+    .burger1-open {
+      transform: rotateZ(-45deg) translateY(10px);
+    }
+
+    .burger2-open {
+      transform: rotateZ(45deg) translateY(-12px) translateX(-1px);
     }
   </style>
 
   <script>
     function openModal() {
       document.getElementById("nav-modal")?.classList.toggle("hide");
+      document
+        .getElementById("burger-bar-one")
+        ?.classList.toggle("burger1-open");
+      document
+        .getElementById("burger-bar-two")
+        ?.classList.toggle("burger2-open");
     }
 
     document
