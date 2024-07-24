@@ -1,0 +1,95 @@
+<div id="click-me" class="box">
+  <span>Click Me</span>
+  <svg class="flower" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+    <path
+      class="stem"
+      d="M50 200 L50 160"
+      stroke="green"
+      stroke-width="4"
+      fill="none"></path>
+    <circle class="center" cx="50" cy="150" r="10" fill="yellow"></circle>
+    <g class="petals">
+      <path d="M50 140 Q60 125 50 110 Q40 125 50 140" fill="pink"></path>
+      <path d="M60 150 Q75 160 90 150 Q75 140 60 150" fill="pink"></path>
+      <path d="M50 160 Q60 175 50 190 Q40 175 50 160" fill="pink"></path>
+      <path d="M40 150 Q25 160 10 150 Q25 140 40 150" fill="pink"></path>
+    </g>
+  </svg>
+</div>
+
+<style>
+  #click-me {
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(194, 65, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+  }
+
+  #click-me span {
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .flower {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 200px;
+    transition: bottom 1.5s ease-out;
+  }
+
+  .stem {
+    stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+    transition: stroke-dashoffset 1.5s ease-out;
+  }
+
+  .center {
+    transform-origin: center;
+    transform: scale(0);
+    transition: transform 0.5s ease-out 1s;
+  }
+
+  .petals path {
+    transform-origin: center;
+    transform: scale(0);
+    transition: transform 0.5s ease-out 1.2s;
+  }
+</style>
+
+<script>
+  const clickMe = document.getElementById("click-me");
+  const flower = clickMe.querySelector(".flower");
+  const stem = flower.querySelector(".stem");
+  const center = flower.querySelector(".center");
+  const petals = flower.querySelectorAll(".petals path");
+
+  clickMe.addEventListener("click", () => {
+    // Animate the flower growing
+    flower.style.bottom = "0";
+    stem.style.strokeDashoffset = "0";
+    center.style.transform = "scale(1)";
+    petals.forEach((petal) => {
+      petal.style.transform = "scale(1)";
+    });
+
+    // Reset animation after 4 seconds
+    setTimeout(() => {
+      flower.style.bottom = "-100px";
+      stem.style.strokeDashoffset = "40";
+      center.style.transform = "scale(0)";
+      petals.forEach((petal) => {
+        petal.style.transform = "scale(0)";
+      });
+    }, 4000);
+  });
+</script>

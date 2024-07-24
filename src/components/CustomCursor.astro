@@ -1,0 +1,146 @@
+---
+
+---
+
+<div class="container">
+  <div id="click-me" class="box">Click Me</div>
+  <div id="drag-me" class="box">Drag Me</div>
+  <div id="expand-me" class="box">Expand Me</div>
+</div>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>This is the expanded modal content.</p>
+  </div>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  #click-me {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .flower {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    transition: bottom 0.5s ease-out;
+  }
+
+  #drag-me {
+    position: absolute;
+  }
+
+  .rocket {
+    font-size: 40px;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  // Click Me functionality
+  const clickMe = document.getElementById("click-me");
+  clickMe.addEventListener("click", () => {
+    const flower = document.createElement("div");
+    flower.textContent = "🌼";
+    flower.className = "flower";
+    clickMe.appendChild(flower);
+    setTimeout(() => {
+      flower.style.bottom = "100%";
+    }, 50);
+  });
+
+  // Drag Me functionality
+  const dragMe = document.getElementById("drag-me");
+  let isDragging = false;
+  let startX, startY;
+
+  dragMe.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    startX = e.clientX - dragMe.offsetLeft;
+    startY = e.clientY - dragMe.offsetTop;
+  });
+
+  document.addEventListener("mousemove", (e) => {
+    if (isDragging) {
+      dragMe.style.left = e.clientX - startX + "px";
+      dragMe.style.top = e.clientY - startY + "px";
+      dragMe.textContent = "🚀";
+      dragMe.classList.add("rocket");
+    }
+  });
+
+  document.addEventListener("mouseup", () => {
+    isDragging = false;
+    setTimeout(() => {
+      dragMe.textContent = "Drag Me";
+      dragMe.classList.remove("rocket");
+    }, 1000);
+  });
+
+  // Expand Me functionality
+  const expandMe = document.getElementById("expand-me");
+  const modal = document.getElementById("modal");
+  const closeBtn = document.querySelector(".close");
+
+  expandMe.addEventListener("click", () => {
+    modal.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
