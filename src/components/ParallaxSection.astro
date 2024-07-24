@@ -1,0 +1,71 @@
+---
+const { backgroundUrl, speed = 0.5, height = "100vh" } = Astro.props;
+---
+
+<div
+  class="parallax-container"
+  style={`height: ${height}; border:1px solid white`}
+>
+  <div
+    class="parallax-background"
+    style={`background-image: url(${backgroundUrl});`}
+    id="imagediv"
+  >
+  </div>
+  <div class="content" style="z-index:20">
+    <slot />
+  </div>
+</div>
+
+<style define:vars={{ speed }}>
+  .parallax-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .parallax-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(0);
+    will-change: transform;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .parallax-background {
+      transform: translateY(calc(var(--scrollY, 0) * var(--speed) * -1px));
+    }
+  }
+</style>
+
+<script>
+  const parallaxElements = document.querySelectorAll(".parallax-background");
+
+  function updateParallax() {
+    parallaxElements.forEach((el) => {
+      const container = el.closest(".parallax-container");
+      const rect = container!.getBoundingClientRect();
+      const scrollY = window.scrollY - rect.top + window.innerHeight / 2;
+      (el as HTMLElement).style.setProperty("--scrollY", scrollY.toString());
+    });
+  }
+
+  window.addEventListener("scroll", updateParallax);
+  window.addEventListener("resize", updateParallax);
+  updateParallax();
+</script>

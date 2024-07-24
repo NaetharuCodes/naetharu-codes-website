@@ -1,5 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import FlipCard from "../components/FlipCard.astro";
+import ParallaxSection from "../components/ParallaxSection.astro";
+import SvgAnimations from "../components/SvgAnimations.astro";
+import image from "../assets/astro_logo.png";
 ---
 
 <BaseLayout>
@@ -8,74 +12,31 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     <p>Some examples of fun UI elements I've created</p>
 
-    <h2 class="text-orange-700 text-xl mt-10">Flip Cards</h2>
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <h2>Front Title</h2>
-          <p>Front of card content</p>
-        </div>
-        <div class="flip-card-back">
-          <h2>Back Title</h2>
-          <p>back of card content</p>
-        </div>
-      </div>
+    <h2 class="text-orange-700 text-xl mt-10 mb-6">Flip Cards</h2>
+    <div class="mb-2">
+      Hover over the card to see it flip around and reveal more information.
     </div>
+    <FlipCard
+      frontTitle="Front Title"
+      frontText="Some text on the front"
+      backTitle="Back Title"
+      backText="Some more text on the back of the card that the user can read once it has been flipped"
+    />
 
-    <style>
-      .flip-card {
-        background-color: transparent;
-        width: 300px;
-        height: 200px;
-        perspective: 1000px;
-        font-family: sans-serif;
-      }
+    <h2 class="text-orange-700 text-xl mt-10 mb-6">Paralax Scroll</h2>
+    <div class="mb-2">
+      Scroll down to see the text move with paralax over the background image
+    </div>
+    <ParallaxSection backgroundUrl={image.src} speed={0.5} height="800px">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Scroll down to see the parallax effect</p>
+      <!-- <img src={image.src} alt="" /> -->
+    </ParallaxSection>
 
-      .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-      }
-
-      .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-      }
-
-      .flip-card-front,
-      .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      .flip-card-front {
-        background-color: #f1f1f1;
-        color: #333;
-      }
-
-      .flip-card-back {
-        background-color: #333;
-        color: #f1f1f1;
-        transform: rotateY(180deg);
-      }
-
-      h2 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        padding: 0 20px;
-      }
-    </style>
+    <h2 class="text-orange-700 text-xl mt-10 mb-6">Paralax Scroll</h2>
+    <div class="mb-2">
+      Scroll down to see the text move with paralax over the background image
+    </div>
+    <SvgAnimations />
   </div>
 </BaseLayout>
