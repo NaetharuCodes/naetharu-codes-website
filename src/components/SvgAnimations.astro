@@ -2,13 +2,15 @@
 import { interpolate } from "flubber";
 ---
 
-<div class="morphing-svg-container">
+<div class="morphing-svg-container" style="border:1px solid white">
   <svg viewBox="0 0 100 100" class="morphing-shape">
     <path d="M20,20 L80,20 L80,80 L20,80 Z"></path>
   </svg>
 </div>
 
-<button id="morph-trigger">Morph Shape</button>
+<button class="bg-orange-700 hover:bg-orange-500" id="morph-trigger"
+  >Morph Shape</button
+>
 
 <style>
   .morphing-svg-container {
@@ -24,7 +26,7 @@ import { interpolate } from "flubber";
 
   .morphing-shape path {
     fill: none;
-    stroke: #3498db;
+    stroke: rgb(194 65 12);
     stroke-width: 4;
   }
 
@@ -33,16 +35,11 @@ import { interpolate } from "flubber";
     margin: 20px auto;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #3498db;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #2980b9;
   }
 </style>
 
