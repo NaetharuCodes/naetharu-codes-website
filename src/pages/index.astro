@@ -3,6 +3,45 @@ import InfoText from "../components/InfoText.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
+<style>
+  .animation-base {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+  }
+
+  .p2 {
+    animation-name: fadeIn;
+    animation-delay: 0.2s;
+  }
+
+  .p3 {
+    animation-name: fadeIn;
+    animation-delay: 0.4s;
+  }
+
+  .p4 {
+    animation-name: fadeIn;
+    animation-delay: 0.6s;
+  }
+
+  .p5 {
+    animation-name: fadeIn;
+    animation-delay: 0.8s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
 <BaseLayout>
   <div
     class="min-w-full grow gird grid-cols-1 lg:h-[calc(100vh-144px)] bg-white"
@@ -23,17 +62,23 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </div>
       </div>
       <div class="flex flex-col justify-evenly p-10 md:pl-20 z-">
-        <InfoText text="Full stack web developer" />
-        <InfoText
-          text="Experience in Civil Engineering, Finance, and Entertainment"
-        />
-        <InfoText
-          text="Founder and lead developer for RPG Playbook - an AI powered tool for tabletop roleplaying games"
-        />
-        <InfoText text="Working with business AI solutions since 2017" />
-        <InfoText
-          text="Experienced in Stable Diffusion including custom model training"
-        />
+        <p class="text-base md:text-2xl animation-base">
+          Full stack web developer
+        </p>
+        <p class="text-base md:text-2xl animation-base p2">
+          Experienced in the civil engineering, finance, and entertainment
+          Industry
+        </p>
+        <p class="text-base md:text-2xl animation-base p3">
+          Founder and lead developer for RPG Playbook - an AI powered tool for
+          tabletop roleplaying games
+        </p>
+        <p class="text-base md:text-2xl animation-base p4">
+          Passionate about frontend and UX development
+        </p>
+        <p class="text-base md:text-2xl animation-base p5">
+          Working with AI solutions for business since 2018
+        </p>
       </div>
     </div>
   </div>
