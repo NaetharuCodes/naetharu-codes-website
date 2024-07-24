@@ -13,12 +13,48 @@ import LinkItem from "./LinkItem.astro";
     <LinkItem text="Services" url="/services" />
     <LinkItem text="About Me" url="/aboutme" />
   </ul>
-  <div
+  <button
     id="menu-burger"
     class="flex md:hidden flex-col w-[46px] h-[42px] justify-between"
   >
     <div class="h-1 w-full bg-black"></div>
     <div class="h-1 w-full bg-black"></div>
     <div class="h-1 w-full bg-black"></div>
+  </button>
+  <div
+    id="nav-modal"
+    class="absolute top-[72px] left-0 right-0 bg-black text-orange-700 z-20 hide flex flex-col md:hidden"
+  >
+    <!-- <LinkItem text="Code" url="/code" />
+    <LinkItem text="AI Art" url="/aiart" />
+    <LinkItem text="Projects" url="/projects" />
+    <LinkItem text="Services" url="/services" />
+    <LinkItem text="About Me" url="/aboutme" /> -->
+    <a class="py-4 pl-6" href="/code">Code</a>
+    <a class="py-4 pl-6" href="/aiart">AI Art</a>
+    <a class="py-4 pl-6" href="/projects">Projects</a>
+    <a class="py-4 pl-6" href="/services">Services</a>
+    <a class="py-4 pl-6" href="/aboutme">About Me</a>
   </div>
+
+  <style>
+    .hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    #nav-modal {
+      transition: 0.2s;
+    }
+  </style>
+
+  <script>
+    function openModal() {
+      document.getElementById("nav-modal")?.classList.toggle("hide");
+    }
+
+    document
+      .getElementById("menu-burger")
+      ?.addEventListener("click", openModal);
+  </script>
 </header>

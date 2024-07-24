@@ -5,7 +5,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <div class="p-10 flex flex-col items-center justify-center grow">
+  <div class="p-10 flex flex-col items-center justify-center grow text-start">
     <div>
       <h1 class="text-white text-4xl">James Bridge</h1>
 
@@ -24,7 +24,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </p>
 
       <div class="mb-10">
-        <h2 class="text-white text-2xl mb-2">Skills</h2>
+        <h2 class="text-2xl mb-2 text-orange-700">Skills</h2>
         <ul class="text-white list-disc pl-5 leading-8">
           <li>Full Stack Web Development</li>
           <li>Green Fields Projects</li>
@@ -38,7 +38,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </ul>
       </div>
       <div>
-        <h2 class="text-white text-2xl mb-2">Experience</h2>
+        <h2 class="text-orange-700 text-2xl mb-2">Experience</h2>
         <ul class="text-white list-disc pl-5 leading-8">
           <li>Technology lead for civil engineering and highways company</li>
           <li>Green fields application development in Finance</li>
@@ -50,5 +50,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </ul>
       </div>
     </div>
+    <a
+      class="text-orange-700 text-2xl hover:text-orange-500"
+      href="mailto:naetharu@gmail.com">Contact me</a
+    >
   </div>
+
+  <style>
+    li {
+      margin: 10px 0 10px 0;
+      text-align: start;
+    }
+
+    h2 {
+      margin-top: 48px;
+    }
+  </style>
 </BaseLayout>
