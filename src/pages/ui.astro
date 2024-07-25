@@ -79,12 +79,20 @@ import SunshineDay from "../components/SunshineDay.astro";
     <BounceBoxMenu />
 
     <h2 class="text-orange-700 text-xl mt-10 mb-6">CSS Art</h2>
-    <div class="mb-2">
+    <div class="mb-2 block md:hidden text-left">
+      Please use desktop mode to view the CSS art. Due to the absolute
+      positioning it's not responsive. Viewing in mobile using landscape will
+      activate it.
+    </div>
+    <div class="mb-2 hidden md:block">
       With a bit of patience you can make some really cool things with pure CSS.
       Here is an example scene. There are no images or SVGs involved. Everything
-      you see is a div element, and pure CSS.
+      you see is a div element, and pure CSS. Because of the fixed nature of the
+      CSS art it is not viewable in mobile layout.
     </div>
-    <ComputerDesk />
-    <SunshineDay />
+    <div class="hidden md:block">
+      <ComputerDesk />
+      <SunshineDay />
+    </div>
   </div>
 </BaseLayout>
