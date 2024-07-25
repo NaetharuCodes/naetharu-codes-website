@@ -106,16 +106,18 @@
     width: 2px;
     height: 36px;
     background-color: black;
-    transform-origin: bottom center;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
     animation: rotate-hand 12s linear infinite;
   }
 
   @keyframes rotate-hand {
     from {
-      transform: translateY(-17px) translateX(0px) rotate(0deg);
+      transform: translate(-50%, -100%) rotate(0deg);
     }
     to {
-      transform: translateY(-17px) translateX(0px) rotate(360deg);
+      transform: translate(-50%, -100%) rotate(360deg);
     }
   }
 
@@ -124,16 +126,18 @@
     width: 2px;
     height: 24px;
     background-color: black;
-    transform-origin: bottom center;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
     animation: rotate-minute 120s linear infinite;
   }
 
   @keyframes rotate-minute {
     from {
-      transform: translateY(-10px) translateX(0px) rotate(0deg);
+      transform: translate(-50%, -100%) rotate(0deg);
     }
     to {
-      transform: translateY(-16px) translateX(0px) rotate(360deg);
+      transform: translate(-50%, -100%) rotate(360deg);
     }
   }
 
