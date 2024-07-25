@@ -1,0 +1,211 @@
+---
+
+---
+
+<div class="container">
+  <div id="sky"></div>
+  <div id="grass"></div>
+  <div id="cloud">
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+  </div>
+  <div id="cloud2">
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+  </div>
+
+  <div id="person-left">
+    <div class="face" style="background:pink">
+      <div class="hair" style="background: rgb(223, 138, 41)"></div>
+      <div style="display:flex; justify-content: space-around;">
+        <div style="background:rgb(37, 143, 111)" class="eye"></div>
+        <div style="background:rgb(37, 143, 111)" class="eye"></div>
+      </div>
+    </div>
+    <div id="body-1"></div>
+    <div></div>
+  </div>
+  <div id="person-right" style="background: rgb(153, 153, 212)">
+    <div class="face" style="background: rgb(68, 28, 28)">
+      <div class="hair" style="background: rgb(12, 6, 6)"></div>
+      <div style="display:flex; justify-content: space-around;">
+        <div style="background:rgb(19, 14, 14)" class="eye"></div>
+        <div style="background:rgb(19, 14, 14)" class="eye"></div>
+      </div>
+    </div>
+    <div id="body-1"></div>
+  </div>
+  <div id="ball" class="tartan-background"></div>
+</div>
+
+<style>
+  .container {
+    margin: 32px 0 32px 0;
+    height: 400px;
+    background: rgb(160, 160, 160);
+    position: relative;
+    width: 770px;
+    overflow: hidden;
+  }
+
+  .tartan-background {
+    background-color: #ff0000; /* Red base */
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 0, 0.5) 50%,
+        transparent 50%
+      ),
+      linear-gradient(rgba(255, 255, 0, 0.5) 50%, transparent 50%),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.1) 50%, transparent 50%),
+      linear-gradient(rgba(0, 0, 0, 0.1) 50%, transparent 50%);
+    background-size:
+      60px 60px,
+      60px 60px,
+      30px 30px,
+      30px 30px;
+  }
+
+  #sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 30%;
+    background-color: skyblue;
+    z-index: 0;
+  }
+
+  #grass {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    bottom: 0%;
+    background-color: green;
+  }
+
+  #cloud {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    animation: clouds 26s linear infinite;
+    opacity: 0.7;
+  }
+
+  #cloud2 {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    animation: clouds 20s linear infinite;
+    scale: 1.4;
+  }
+
+  .c1 {
+    background-color: white;
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    top: 30px;
+    left: 70px;
+    position: absolute;
+  }
+
+  .c2 {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 30px;
+    left: 10px;
+    position: absolute;
+  }
+
+  .c3 {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 10px;
+    left: 20px;
+    position: absolute;
+  }
+
+  @keyframes clouds {
+    from {
+      transform: translateX(-200px);
+    }
+    to {
+      transform: translateX(1000px);
+    }
+  }
+
+  @keyframes clouds2 {
+    from {
+      transform: translateX(-200px);
+    }
+    to {
+      transform: translateX(1000px);
+    }
+  }
+
+  #person-left {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 10px;
+    bottom: 90px;
+    height: 100px;
+    width: 40px;
+    background-color: white;
+  }
+
+  .face {
+    height: 40px;
+    position: relative;
+  }
+
+  .hair {
+    height: 14px;
+  }
+
+  .eye {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+  }
+  #person-right {
+    position: absolute;
+    right: 80px;
+    bottom: 40px;
+    height: 100px;
+    width: 40px;
+    background-color: white;
+  }
+
+  #ball {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    animation: ball-toss 2s cubic-bezier(0.1, 0.3, 0.3, 0.1) infinite alternate;
+    offset-path: path("M 45 281.75 Q 331 68.75 601 278.75");
+    transform: translate(50px, -50px);
+  }
+
+  @keyframes ball-toss {
+    0% {
+      offset-distance: 0%;
+    }
+    100% {
+      offset-distance: 100%;
+    }
+  }
+</style>
