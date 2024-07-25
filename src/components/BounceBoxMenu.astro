@@ -95,18 +95,13 @@
 </style>
 
 <script>
-  console.log("running");
-
   let squareToggle = document.querySelector(".bounceBoxMenuToggle");
   let squareMenu = document.querySelector(".bounceBoxMenu");
 
   console.log(squareMenu);
 
   if (squareToggle) {
-    console.log("inside");
-
     squareToggle.onclick = function () {
-      console.log("toggle");
       squareMenu?.classList.toggle("active");
     };
   }
