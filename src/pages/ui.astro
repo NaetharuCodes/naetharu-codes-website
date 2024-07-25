@@ -10,6 +10,7 @@ import SlideText from "../components/SlideText.astro";
 import AnimatedRadialMenu from "../components/AnimatedRadialMenu.astro";
 import SquareMenuAnimation from "../components/SquareMenuAnimation.astro";
 import BounceBoxMenu from "../components/BounceBoxMenu.astro";
+import ComputerDesk from "../components/ComputerDesk.astro";
 ---
 
 <BaseLayout>
@@ -63,10 +64,25 @@ import BounceBoxMenu from "../components/BounceBoxMenu.astro";
     <SpinnerText />
     <SlideText text="Animation..." />
 
-    <h2 class="text-orange-700 text-xl mt-10 mb-6">Animated Radial Menu</h2>
-    <div class="mb-2">An animated radial menu built usinng pure CSS and JS</div>
+    <h2 class="text-orange-700 text-xl mt-10 mb-6">Animated Menu</h2>
+    <div class="mb-2">
+      Fancy animations for menus build with pure CSS. These use only native CSS
+      for all of the menu control. The only JS involved is to simply add the
+      onClick listener to the menu-button.
+    </div>
+    Radial Menu
     <AnimatedRadialMenu />
+    Linear Menu
     <SquareMenuAnimation />
+    Vertical Menu
     <BounceBoxMenu />
+
+    <h2 class="text-orange-700 text-xl mt-10 mb-6">CSS Art</h2>
+    <div class="mb-2">
+      With a bit of patience you can make some really cool things with pure CSS.
+      Here is an example scene. There are no images or SVGs involved. Everything
+      you see is a div element, and pure CSS.
+    </div>
+    <ComputerDesk />
   </div>
 </BaseLayout>

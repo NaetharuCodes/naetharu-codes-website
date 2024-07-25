@@ -1,0 +1,324 @@
+---
+
+---
+
+<div class="container">
+  <div id="clock">
+    <div id="hour-hand"></div>
+    <div id="minute-hand"></div>
+  </div>
+  <div id="computer-monitor"></div>
+  <div id="monitor-stand"></div>
+  <div id="computer-screen"></div>
+  <div id="keyboard">
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+    <div class="key space-key"></div>
+    <div class="key"></div>
+    <div class="key"></div>
+  </div>
+  <div id="mouse"></div>
+  <div id="mouse-btns"></div>
+  <div id="desk"></div>
+  <div id="desk-inside"></div>
+  <div id="desk-draw"><div id="draw-handle"></div></div>
+  <div id="tower">
+    <div id="tower-lights">
+      <div id="green-light" class="tower-light"></div>
+      <div id="red-light" class="tower-light"></div>
+      <div id="amber-light" class="tower-light"></div>
+    </div>
+    <div id="tower-grill"></div>
+  </div>
+  <div id="bin"></div>
+</div>
+
+<style>
+  .container {
+    height: 400px;
+    background-image: linear-gradient(
+      90deg,
+      #dbdbdb 25%,
+      #e3e3e3 25%,
+      #e3e3e3 50%,
+      #dbdbdb 50%,
+      #dbdbdb 75%,
+      #e3e3e3 75%,
+      #e3e3e3 100%
+    );
+    background-size: 80px 80px;
+    position: relative;
+    width: 770px;
+  }
+
+  #clock {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(221, 218, 214);
+    top: 40px;
+    right: 40px;
+    border-radius: 50%;
+    border: 4px solid black;
+  }
+
+  #hour-hand {
+    position: absolute;
+    width: 2px;
+    height: 36px;
+    background-color: black;
+    transform-origin: bottom center;
+    animation: rotate-hand 12s linear infinite;
+  }
+
+  @keyframes rotate-hand {
+    from {
+      transform: translateY(-17px) translateX(0px) rotate(0deg);
+    }
+    to {
+      transform: translateY(-17px) translateX(0px) rotate(360deg);
+    }
+  }
+
+  #minute-hand {
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    background-color: black;
+    transform-origin: bottom center;
+    animation: rotate-minute 120s linear infinite;
+  }
+
+  @keyframes rotate-minute {
+    from {
+      transform: translateY(-10px) translateX(0px) rotate(0deg);
+    }
+    to {
+      transform: translateY(-16px) translateX(0px) rotate(360deg);
+    }
+  }
+
+  #computer-monitor {
+    position: absolute;
+    width: 240px;
+    height: 140px;
+    background-color: rgb(54, 53, 52);
+    top: 35px;
+    left: 260px;
+    z-index: 1;
+  }
+
+  #monitor-stand {
+    position: absolute;
+    height: 100px;
+    width: 40px;
+    top: 100px;
+    background-color: #2a2a2a;
+    left: 360px;
+    z-index: 0;
+  }
+
+  #computer-screen {
+    position: absolute;
+    width: 228px;
+    height: 130px;
+    background: rgb(105, 105, 107);
+    background: radial-gradient(
+      circle,
+      rgba(105, 105, 107, 1) 0%,
+      rgba(179, 179, 193, 1) 35%,
+      rgba(154, 160, 161, 1) 100%
+    );
+    top: 40px;
+    left: 266px;
+    z-index: 2;
+  }
+
+  #keyboard {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    top: 190px;
+    left: 285px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 2px;
+    padding: 1px;
+  }
+
+  .key {
+    background: rgb(56, 55, 55);
+  }
+
+  .space-key {
+    grid-column: span 8;
+  }
+
+  #mouse {
+    position: absolute;
+    width: 30px;
+    height: 24px;
+    background-color: rgb(255, 255, 255);
+    top: 200px;
+    left: 510px;
+    border-radius: 50% 70% 30% / 22% 22% 78% 78%;
+  }
+
+  #mouse-btns {
+    width: 2px;
+    height: 10px;
+    background-color: rgb(133, 133, 133);
+    position: absolute;
+    top: 200px;
+    left: 524px;
+  }
+
+  #desk {
+    position: absolute;
+    width: 480px;
+    height: 180px;
+    background-color: rgb(124, 80, 25);
+    top: 220px;
+    left: 145px;
+  }
+
+  #desk-inside {
+    position: absolute;
+    width: 380px;
+    height: 170px;
+    background-color: rgb(56, 45, 31);
+    position: relative;
+    top: 230px;
+    left: 155px;
+  }
+
+  #desk-draw {
+    position: absolute;
+    background-color: rgb(148, 94, 28);
+    width: 80px;
+    height: 50px;
+    top: 230px;
+    left: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #draw-handle {
+    width: 40px;
+    height: 10px;
+    background-color: rgb(66, 66, 66);
+    border-radius: 3px;
+  }
+
+  #tower {
+    position: absolute;
+    background-color: rgb(104, 104, 104);
+    width: 70px;
+    height: 180px;
+    top: 40px;
+    left: 164px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+  }
+
+  #tower-lights {
+    background: #3a3a3a;
+    width: 100%;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #tower-grill {
+    background: #797878;
+    width: 100%;
+    flex-grow: 1;
+    margin-top: 2px;
+    background-color: #2a2a2a;
+    background-image: linear-gradient(to right, #3a3a3a 1px, transparent 1px),
+      linear-gradient(to bottom, #3a3a3a 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+
+  #bin {
+  }
+
+  .tower-light {
+    background-color: white;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    z-index: 120;
+  }
+
+  #green-light {
+    background-color: white;
+    animation: flicker 2s ease 1s infinite;
+  }
+
+  #red-light {
+    background-color: rgb(110, 13, 13);
+  }
+
+  #amber-light {
+    background-color: rgb(124, 91, 30);
+  }
+
+  @keyframes flicker {
+    from {
+      background-color: rgb(50, 240, 25);
+    }
+    to {
+      background-color: green;
+    }
+  }
+</style>
