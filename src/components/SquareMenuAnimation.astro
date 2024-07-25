@@ -1,0 +1,116 @@
+---
+
+---
+
+<div class="container">
+  <ul class="squareMenu">
+    <div class="squareMenuToggle">
+      <ion-icon name="apps-outline"></ion-icon>
+    </div>
+
+    <li style="--i:1">
+      <ion-icon name="baseball-outline"></ion-icon>
+      Actions
+    </li>
+    <li style="--i:2">
+      <ion-icon name="camera-outline"></ion-icon>
+      Places
+    </li>
+    <li style="--i:3">
+      <ion-icon name="cloud-outline"></ion-icon>
+      FAQ
+    </li>
+    <li style="--i:4">
+      <ion-icon name="add-outline"></ion-icon>
+      Home
+    </li>
+  </ul>
+</div>
+
+<style>
+  .container {
+    margin-top: 32px;
+    padding: 16px;
+    box-sizing: border-box;
+    background: rgb(30, 30, 30);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    min-height: 320px;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+    cursor: pointer;
+  }
+
+  li:hover {
+    color: rgb(194 65 12);
+  }
+
+  .squareMenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 260px;
+  }
+
+  .squareMenuToggle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: transform 1.5s;
+  }
+
+  .squareMenu li {
+    position: absolute;
+    transform-origin: 130px;
+    transition: 0.2s;
+    opacity: 0;
+  }
+
+  .squareMenu.active li {
+    transform: translateX(calc(70px * var(--i)));
+    opacity: 1;
+  }
+</style>
+
+<script>
+  console.log("running");
+
+  let squareToggle = document.querySelector(".squareMenuToggle");
+  let squareMenu = document.querySelector(".squareMenu");
+
+  console.log(squareMenu);
+
+  if (squareToggle) {
+    console.log("inside");
+
+    squareToggle.onclick = function () {
+      console.log("toggle");
+      squareMenu?.classList.toggle("active");
+    };
+  }
+</script>
+
+<!-- ICON IMPORTS -->
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
