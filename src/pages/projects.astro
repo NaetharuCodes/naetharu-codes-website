@@ -1,102 +1,155 @@
 ---
+import NeonPulseButton from "../components/NeonPulseButton.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 // import char1 from "../assets/";
 ---
 
 <BaseLayout>
   <div
-    class="text-white w-full max-w-[800px] m-auto grow flex flex-col items-center justify-center p-4"
+    class="text-white w-full max-w-[800px] m-auto grow flex flex-col items-start p-4 text-left"
   >
-    <a href="https://www.rpg-playbook.com" class="text-3xl">
+    <a
+      href="https://www.rpg-playbook.com"
+      class="text-3xl flex flex-col items-center w-full"
+    >
       <h1 class="mb-6 flex flex-row justify-center text-orange-700 mt-6">
         RPG Playbook
       </h1>
-      <div
-        class="flex flex-col md:flex-row items-center justify-between m-10 gap-10"
-      >
-        <img
-          src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/5e23cc0f-d2cb-44da-f367-fdd1f2002b00/XLPortrait"
-          alt="RPG Playbook Screenshot"
-          class="max-h-[640px]"
-        />
-        <img
-          src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/62bef899-32e9-45fa-a693-51adb213e500/XLPortrait"
-          alt="RPG Playbook Screenshot"
-          class="max-h-[640px]"
-        />
-      </div>
-
-      <p class="text-sm md:text-base">
-        RPG Playbook is an AI powered tool designed to enhance table-top RPG
-        games. Using a combination of LLM and diffusion models, in conjunction
-        with traditional software, the app allows users to create bespoke game
-        assets in real time.
-      </p>
-
-      <h2
-        class="mt-14 mb-6 flex flex-row justify-center text-xl text-orange-700"
-      >
-        Overview
-      </h2>
-      <p class="text-sm md:text-base mb-6">
-        Running tabletop RPG games is an art that demands creativity, quick
-        thinking, and meticulous planning. Game masters juggle campaign design,
-        non-player character management, mechanical upkeep, and real-time
-        narrative adjustments—a challenging feat even for seasoned storytellers.
-      </p>
-
-      <p class="text-sm md:text-base mb-6">
-        Enter RPG Playbook: your AI-powered assistant designed to elevate your
-        game mastering experience. We harness cutting-edge AI technology to
-        generate unique characters, items, creatures, and locations in seconds,
-        dramatically reducing your creative workload.
-      </p>
-
-      <p class="text-sm md:text-base mb-6">
-        With just a few clicks, game masters can conjure new and exciting assets
-        on the fly, seamlessly adapting to players' choices and enriching the
-        narrative in real-time. Our flexible AI can create a vast array of
-        original content suitable for virtually any RPG setting or genre.
-      </p>
-
-      <p class="text-sm md:text-base mb-6">
-        RPG Playbook doesn't stop at individual assets. Organize your creations
-        into collections and weave them into intricate, captivating campaigns.
-        Whether you're a novice GM or a veteran storyteller, RPG Playbook
-        empowers you to craft unforgettable adventures with ease and confidence.
-      </p>
-
-      <h2
-        class="mt-14 mb-6 flex flex-row justify-center text-xl text-orange-700"
-      >
-        Examples of Character Assets
-      </h2>
-      <div class="grid grid-cols-2 gap-2">
-        <img
-          src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/64a9bdf6-787c-43e4-fed2-c915b3eaa200/XLPortrait"
-          alt="example character from rpg playbook"
-        />
-        <img
-          src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/1a7ff223-fea8-46e6-7618-570b238bdd00/XLPortrait"
-          alt="example character from rpg playbook"
-        />
-        <img
-          src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/96584ee9-a92e-4b7f-944f-b37d04943000/XLPortrait"
-          alt="example character from rpg playbook"
-        />
-        <img
-          src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/035d916a-429a-4f57-abf1-8b702b0fd700/XLPortrait"
-          alt="example character from rpg playbook"
-        />
-        <img
-          src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/a3e38a67-9beb-4644-5a62-7e92428d8400/XLPortrait"
-          alt="example character from rpg playbook"
-        />
-        <img
-          src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/fb8d355a-5c7f-4500-933e-5c91540ee700/XLPortrait"
-          alt="example character from rpg playbook"
-        />
-      </div>
+      <NeonPulseButton text="Visit the Site" />
     </a>
+    <div
+      class="flex flex-col md:flex-row items-center justify-between m-10 gap-10 text-left"
+    >
+      <img
+        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/5e23cc0f-d2cb-44da-f367-fdd1f2002b00/XLPortrait"
+        alt="RPG Playbook Screenshot"
+        class="max-h-[640px]"
+      />
+      <img
+        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/62bef899-32e9-45fa-a693-51adb213e500/XLPortrait"
+        alt="RPG Playbook Screenshot"
+        class="max-h-[640px]"
+      />
+    </div>
+
+    <p class="text-sm md:text-base">
+      RPG Playbook is an AI powered tool designed to enhance table-top RPG
+      games. Using a combination of LLM and diffusion models, in conjunction
+      with traditional software, the app allows users to create bespoke game
+      assets in real time.
+    </p>
+
+    <h2 class="mt-14 mb-6 flex flex-row justify-center text-xl text-orange-700">
+      Overview
+    </h2>
+    <p class="text-sm md:text-base mb-6">
+      Running tabletop RPG games is an art that demands creativity, quick
+      thinking, and meticulous planning. Game masters juggle campaign design,
+      non-player character management, mechanical upkeep, and real-time
+      narrative adjustments—a challenging feat even for seasoned storytellers.
+    </p>
+
+    <p class="text-sm md:text-base mb-6">
+      Enter RPG Playbook: your AI-powered assistant designed to elevate your
+      game mastering experience. We harness cutting-edge AI technology to
+      generate unique characters, items, creatures, and locations in seconds,
+      dramatically reducing your creative workload.
+    </p>
+
+    <p class="text-sm md:text-base mb-6">
+      With just a few clicks, game masters can conjure new and exciting assets
+      on the fly, seamlessly adapting to players' choices and enriching the
+      narrative in real-time. Our flexible AI can create a vast array of
+      original content suitable for virtually any RPG setting or genre.
+    </p>
+
+    <p class="text-sm md:text-base mb-6">
+      RPG Playbook doesn't stop at individual assets. Organize your creations
+      into collections and weave them into intricate, captivating campaigns.
+      Whether you're a novice GM or a veteran storyteller, RPG Playbook empowers
+      you to craft unforgettable adventures with ease and confidence.
+    </p>
+
+    <h2 class="mt-14 mb-6 flex flex-row justify-center text-xl text-orange-700">
+      Examples of Character Assets
+    </h2>
+    <div class="grid grid-cols-2 gap-2">
+      <img
+        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/64a9bdf6-787c-43e4-fed2-c915b3eaa200/XLPortrait"
+        alt="example character from rpg playbook"
+      />
+      <img
+        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/1a7ff223-fea8-46e6-7618-570b238bdd00/XLPortrait"
+        alt="example character from rpg playbook"
+      />
+      <img
+        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/96584ee9-a92e-4b7f-944f-b37d04943000/XLPortrait"
+        alt="example character from rpg playbook"
+      />
+      <img
+        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/035d916a-429a-4f57-abf1-8b702b0fd700/XLPortrait"
+        alt="example character from rpg playbook"
+      />
+      <img
+        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/a3e38a67-9beb-4644-5a62-7e92428d8400/XLPortrait"
+        alt="example character from rpg playbook"
+      />
+      <img
+        src="https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/fb8d355a-5c7f-4500-933e-5c91540ee700/XLPortrait"
+        alt="example character from rpg playbook"
+      />
+    </div>
+    <h2 class="mt-14 mb-6 flex flex-row justify-center text-xl text-orange-700">
+      Technology
+    </h2>
+    <p class="text-sm md:text-base mb-6">
+      When we embarked on developing RPG Playbook, we initially created a proof
+      of concept using OpenAI's API, leveraging GPT-3.5 Turbo for text
+      generation and DALL-E for image creation. However, as we progressed, we
+      encountered several challenges that prompted us to reconsider our
+      approach.
+    </p>
+
+    <p class="text-sm md:text-base mb-6">
+      The costs associated with OpenAI's services proved to be prohibitively
+      high for our project's scale. Additionally, we faced reliability issues
+      that could potentially impact user experience. Perhaps most critically, we
+      realized that relying solely on OpenAI's ecosystem made us vulnerable to
+      changes in their policies or services
+    </p>
+
+    <p class="text-sm md:text-base mb-6">
+      In response to these challenges, we pivoted our technology stack. For
+      image generation, we transitioned to Stable Diffusion, implementing a
+      custom-trained SDXL model tailored to our specific needs. On the text
+      generation front, we opted for a locally running version of Meta's Llama 3
+      Instruct model.
+    </p>
+
+    <p class="text-sm md:text-base mb-6">
+      This shift has not only addressed our initial concerns but has also given
+      us greater control over our app's core functionalities. By bringing key
+      components in-house, we've enhanced our ability to fine-tune performance,
+      ensure reliability, and maintain independence from third-party services.
+    </p>
   </div>
+  ]
 </BaseLayout>
+
+<style>
+  #siteLink {
+    transition: 2s;
+  }
+
+  #siteLink:hover {
+    background: orange;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  li {
+    margin: 10px 10px;
+  }
+</style>
