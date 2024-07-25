@@ -1,0 +1,170 @@
+---
+interface Props {
+  text: string;
+  className?: string;
+  onClick?: string;
+}
+
+const { text, className = "", onClick } = Astro.props;
+---
+
+<button
+  class={`glitch-button ${className}`}
+  data-text={text}
+  data-onclick={onClick}
+>
+  {text}
+</button>
+
+<script>
+  document.querySelectorAll(".glitch-button").forEach((button) => {
+    button.addEventListener("click", function () {
+      const onClickHandler = this.getAttribute("data-onclick");
+      if (onClickHandler) {
+        const fn = new Function(onClickHandler);
+        fn();
+      }
+    });
+  });
+</script>
+
+<style>
+  .glitch-button {
+    margin: 32px 0 32px 0;
+    --button-bg: #ffc107; /* Rich mid-yellow */
+    --button-text: #000000; /* Black text for contrast */
+    --glitch-blue: #00fff9;
+    --glitch-red: #ff00c1;
+
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--button-text);
+    background-color: var(--button-bg);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  .glitch-button:hover {
+    background-color: #ffca28; /* Slightly lighter yellow on hover */
+  }
+
+  .glitch-button::before,
+  .glitch-button::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+
+  .glitch-button::before {
+    left: 2px;
+    text-shadow: -2px 0 var(--glitch-red);
+    clip: rect(24px, 550px, 90px, 0);
+  }
+
+  .glitch-button::after {
+    left: -2px;
+    text-shadow:
+      -2px 0 var(--glitch-blue),
+      2px 2px var(--glitch-red);
+    clip: rect(85px, 550px, 140px, 0);
+  }
+
+  .glitch-button:hover::before {
+    transform: translateX(-4px);
+    clip: rect(0px, 550px, 150px, 0);
+  }
+
+  .glitch-button:hover::after {
+    transform: translateX(4px);
+    clip: rect(35px, 550px, 180px, 0);
+  }
+
+  @keyframes glitch-anim {
+    0% {
+      clip: rect(14px, 9999px, 66px, 0);
+    }
+    5% {
+      clip: rect(54px, 9999px, 130px, 0);
+    }
+    10% {
+      clip: rect(97px, 9999px, 22px, 0);
+    }
+    15% {
+      clip: rect(67px, 9999px, 23px, 0);
+    }
+    20% {
+      clip: rect(87px, 9999px, 16px, 0);
+    }
+    25% {
+      clip: rect(30px, 9999px, 96px, 0);
+    }
+    30% {
+      clip: rect(46px, 9999px, 46px, 0);
+    }
+    35% {
+      clip: rect(2px, 9999px, 46px, 0);
+    }
+    40% {
+      clip: rect(19px, 9999px, 82px, 0);
+    }
+    45% {
+      clip: rect(4px, 9999px, 71px, 0);
+    }
+    50% {
+      clip: rect(46px, 9999px, 3px, 0);
+    }
+    55% {
+      clip: rect(23px, 9999px, 96px, 0);
+    }
+    60% {
+      clip: rect(33px, 9999px, 50px, 0);
+    }
+    65% {
+      clip: rect(70px, 9999px, 86px, 0);
+    }
+    70% {
+      clip: rect(97px, 9999px, 14px, 0);
+    }
+    75% {
+      clip: rect(61px, 9999px, 37px, 0);
+    }
+    80% {
+      clip: rect(49px, 9999px, 93px, 0);
+    }
+    85% {
+      clip: rect(23px, 9999px, 100px, 0);
+    }
+    90% {
+      clip: rect(58px, 9999px, 39px, 0);
+    }
+    95% {
+      clip: rect(69px, 9999px, 54px, 0);
+    }
+    100% {
+      clip: rect(57px, 9999px, 43px, 0);
+    }
+  }
+
+  .glitch-button:hover::before {
+    animation: glitch-anim 2s infinite linear alternate-reverse;
+  }
+
+  .glitch-button:hover::after {
+    animation: glitch-anim 2s infinite linear alternate;
+  }
+</style>

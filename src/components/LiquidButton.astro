@@ -1,0 +1,129 @@
+---
+interface Props {
+  text: string;
+  className?: string;
+  onClick?: string;
+}
+
+const { text, className = "", onClick } = Astro.props;
+---
+
+<button class={`liquid-button ${className}`} data-onclick={onClick}>
+  <span>{text}</span>
+  <div class="liquid"></div>
+</button>
+
+<script>
+  document.querySelectorAll(".liquid-button").forEach((button) => {
+    button.addEventListener("click", function (e) {
+      // Ripple effect
+      const ripple = document.createElement("div");
+      ripple.classList.add("ripple");
+      this.appendChild(ripple);
+      const rect = this.getBoundingClientRect();
+      ripple.style.left = `${e.clientX - rect.left}px`;
+      ripple.style.top = `${e.clientY - rect.top}px`;
+      ripple.style.animation = "ripple-effect .4s linear";
+      ripple.addEventListener("animationend", () => ripple.remove());
+
+      // Custom onClick handler
+      const onClickHandler = this.getAttribute("data-onclick");
+      if (onClickHandler) {
+        const fn = new Function(onClickHandler);
+        fn();
+      }
+    });
+  });
+</script>
+
+<style>
+  .liquid-button {
+    margin: 32px 0 32px 0;
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 100px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+  .liquid-button:hover {
+    transform: scale(1.05);
+    color: #fff;
+  }
+
+  .liquid-button .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #4973ff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+
+  .liquid-button .liquid::after,
+  .liquid-button .liquid::before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #fff;
+  }
+
+  .liquid-button .liquid::before {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+  }
+
+  .liquid-button .liquid::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, 0.5);
+    animation: animate 10s linear infinite;
+  }
+
+  .liquid-button:hover .liquid {
+    top: -120px;
+  }
+
+  .liquid-button .ripple {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    pointer-events: none;
+    width: 100px;
+    height: 100px;
+    transform: scale(0);
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }
+
+  @keyframes ripple-effect {
+    to {
+      transform: scale(2.5);
+      opacity: 0;
+    }
+  }
+</style>

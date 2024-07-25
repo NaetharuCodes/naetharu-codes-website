@@ -12,6 +12,8 @@ import SquareMenuAnimation from "../components/SquareMenuAnimation.astro";
 import BounceBoxMenu from "../components/BounceBoxMenu.astro";
 import ComputerDesk from "../components/ComputerDesk.astro";
 import SunshineDay from "../components/SunshineDay.astro";
+import LiquidButton from "../components/LiquidButton.astro";
+import GlitchButton from "../components/GlitchButton.astro";
 ---
 
 <BaseLayout>
@@ -65,11 +67,10 @@ import SunshineDay from "../components/SunshineDay.astro";
     <SpinnerText />
     <SlideText text="Animation..." />
 
-    <h2 class="text-orange-700 text-xl mt-10 mb-6">Animated Menu</h2>
+    <h2 class="text-orange-700 text-xl mt-10 mb-6">Animated Components</h2>
     <div class="mb-2">
-      Fancy animations for menus build with pure CSS. These use only native CSS
-      for all of the menu control. The only JS involved is to simply add the
-      onClick listener to the menu-button.
+      Adding some animations to components can elevate a page and make it really
+      stand out.
     </div>
     Radial Menu
     <AnimatedRadialMenu />
@@ -77,6 +78,10 @@ import SunshineDay from "../components/SunshineDay.astro";
     <SquareMenuAnimation />
     Vertical Menu
     <BounceBoxMenu />
+    Button with Liquid Effect
+    <LiquidButton text="press me" />
+    Button with Cyberpunk glitch effect - hover over it to see the effect in action.
+    <GlitchButton text="Cyberpunk" />
 
     <h2 class="text-orange-700 text-xl mt-10 mb-6">CSS Art</h2>
     <div class="mb-2 block md:hidden text-left">
