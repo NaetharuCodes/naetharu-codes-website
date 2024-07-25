@@ -1,0 +1,66 @@
+---
+// Any server-side code (if needed)
+---
+
+<div class="container my-20">
+  <div class="text-wrapper text-orange-700" id="animated-text-container">
+    <p>Full Stack</p>
+    <p>React</p>
+    <p>Express</p>
+    <p>Astro</p>
+    <p>CSS</p>
+    <p>MUI</p>
+    <p>Tailwind</p>
+    <p>SQL</p>
+    <p>Azure</p>
+    <p>Github CI-CD</p>
+  </div>
+</div>
+
+<style>
+  p {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+</style>
+
+<script>
+  import gsap from "gsap";
+  import SplitTextJS from "split-text-js";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    // Target only the p elements within the specific container
+    const container = document.getElementById("animated-text-container");
+    const titles = gsap.utils.toArray("p", container);
+
+    const tl = gsap.timeline({
+      repeat: -1,
+    });
+
+    titles.forEach((title) => {
+      const splitTitle = new SplitTextJS(title);
+      tl.from(
+        splitTitle.chars,
+        {
+          opacity: 0,
+          y: 40,
+          rotateX: -90,
+          stagger: 0.06,
+        },
+        "<"
+      ).to(
+        splitTitle.chars,
+        {
+          opacity: 0,
+          y: -40,
+          rotateX: -90,
+          stagger: 0.06,
+        },
+        "<1"
+      );
+    });
+  });
+</script>

@@ -7,6 +7,8 @@ import image from "../assets/flowers.png";
 import ResponsiveGrid from "../components/ResponsiveGrid.astro";
 import CustomCursor from "../components/CustomCursor.astro";
 import FlowerBox from "../components/FlowerBox.astro";
+import AnimatedText from "../components/AnimatedText.astro";
+import SpinnerText from "../components/SpinnerText.astro";
 ---
 
 <BaseLayout>
@@ -52,10 +54,11 @@ import FlowerBox from "../components/FlowerBox.astro";
     </div>
     <ResponsiveGrid />
 
-    <!-- <h2 class="text-orange-700 text-xl mt-10 mb-6">Custom Cursor</h2>
+    <h2 class="text-orange-700 text-xl mt-10 mb-6">Animated Text</h2>
     <div class="mb-2">
-      A custom cursor that changes depending on what it hovers over.
+      Fun text animations that add some spark to your page. Using GSAP JS to
+      create interesting animations.
     </div>
-    <FlowerBox /> -->
+    <SpinnerText />
   </div>
 </BaseLayout>
