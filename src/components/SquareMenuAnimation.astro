@@ -74,19 +74,23 @@
     border-radius: 50%;
     cursor: pointer;
     font-size: 2rem;
-    transition: transform 1.5s;
+    transition: transform 0.4s;
   }
 
   .squareMenu li {
     position: absolute;
     transform-origin: 130px;
-    transition: 0.2s;
+    transition: 0.4s;
     opacity: 0;
   }
 
   .squareMenu.active li {
     transform: translateX(calc(70px * var(--i)));
     opacity: 1;
+  }
+
+  .squareMenu.active .squareMenuToggle {
+    transform: rotate(855deg);
   }
 </style>
 
