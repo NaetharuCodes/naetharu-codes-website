@@ -5,9 +5,6 @@ import ParallaxSection from "../components/ParallaxSection.astro";
 import SvgAnimations from "../components/SvgAnimations.astro";
 import image from "../assets/flowers.png";
 import ResponsiveGrid from "../components/ResponsiveGrid.astro";
-import CustomCursor from "../components/CustomCursor.astro";
-import FlowerBox from "../components/FlowerBox.astro";
-import AnimatedText from "../components/AnimatedText.astro";
 import SpinnerText from "../components/SpinnerText.astro";
 import SlideText from "../components/SlideText.astro";
 import AnimatedRadialMenu from "../components/AnimatedRadialMenu.astro";
@@ -34,7 +31,7 @@ import AnimatedRadialMenu from "../components/AnimatedRadialMenu.astro";
     <div class="mb-2">
       Scroll down to see the text move with paralax over the background image
     </div>
-    <ParallaxSection backgroundUrl={image.src} speed={1.4} height="200px">
+    <ParallaxSection backgroundUrl={image.src} speed={0.4} height="200px">
       <div class="flex flex-col justify-between h-full">
         <h1>A Window into Another World</h1>
         <p>Scroll down to see the parallax effect</p>
