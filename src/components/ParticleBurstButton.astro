@@ -1,0 +1,50 @@
+---
+interface Props {
+  text: string;
+  className?: string;
+  onClick?: string;
+}
+
+const { text, className = "", onClick } = Astro.props;
+---
+
+<button
+  class={`particle-burst-button ${className}`}
+  data-text={text}
+  data-onclick={onClick}
+>
+  {text}
+</button>
+
+<script src="../scripts/particleBurst.ts"></script>
+
+<style>
+  .particle-burst-button {
+    margin: 32px 0 32px 0;
+    position: relative;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #23282c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  .particle-burst-button:hover {
+    background-color: #23282c;
+  }
+
+  .particle-burst-button canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+</style>

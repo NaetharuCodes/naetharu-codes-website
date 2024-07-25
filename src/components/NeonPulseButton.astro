@@ -1,0 +1,97 @@
+---
+interface Props {
+  text: string;
+  className?: string;
+  onClick?: string;
+}
+
+const { text, className = "", onClick } = Astro.props;
+---
+
+<button class={`neon-pulse-button ${className}`} data-onclick={onClick}>
+  <span class="button-text">{text}</span>
+</button>
+
+<script>
+  document.querySelectorAll(".neon-pulse-button").forEach((button) => {
+    button.addEventListener("click", function () {
+      const onClickHandler = this.getAttribute("data-onclick");
+      if (onClickHandler) {
+        const fn = new Function(onClickHandler);
+        fn();
+      }
+    });
+  });
+</script>
+
+<style>
+  .neon-pulse-button {
+    margin: 32px 0 32px 0;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00fff9;
+    background-color: #111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow:
+      0 0 5px #00fff9,
+      0 0 10px #00fff9,
+      0 0 20px #00fff9;
+  }
+
+  .neon-pulse-button::before,
+  .neon-pulse-button::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-color: #00fff9;
+    z-index: -1;
+    border-radius: 5px;
+    filter: blur(10px);
+  }
+
+  .neon-pulse-button::after {
+    filter: blur(20px);
+  }
+
+  .neon-pulse-button .button-text {
+    position: relative;
+    z-index: 1;
+  }
+
+  .neon-pulse-button:hover {
+    color: #111;
+    background-color: #00fff9;
+    box-shadow:
+      0 0 10px #00fff9,
+      0 0 20px #00fff9,
+      0 0 40px #00fff9;
+  }
+
+  .neon-pulse-button:hover::before,
+  .neon-pulse-button:hover::after {
+    animation: neon-pulse 1.5s infinite alternate;
+  }
+
+  @keyframes neon-pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+</style>

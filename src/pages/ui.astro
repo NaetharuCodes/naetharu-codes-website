@@ -14,6 +14,8 @@ import ComputerDesk from "../components/ComputerDesk.astro";
 import SunshineDay from "../components/SunshineDay.astro";
 import LiquidButton from "../components/LiquidButton.astro";
 import GlitchButton from "../components/GlitchButton.astro";
+import NeonPulseButton from "../components/NeonPulseButton.astro";
+import ParticleBurstButton from "../components/ParticleBurstButton.astro";
 ---
 
 <BaseLayout>
@@ -82,6 +84,11 @@ import GlitchButton from "../components/GlitchButton.astro";
     <LiquidButton text="press me" />
     Button with Cyberpunk glitch effect - hover over it to see the effect in action.
     <GlitchButton text="Cyberpunk" />
+    Button with a neon glow that carries on that Cyberpunk feel.
+    <NeonPulseButton text="Cyberpunk" />
+    Button that creates a particle burst when clicked. Note how the particles are
+    different each time.
+    <ParticleBurstButton text="Cyberpunk" />
 
     <h2 class="text-orange-700 text-xl mt-10 mb-6">CSS Art</h2>
     <div class="mb-2 block md:hidden text-left">
