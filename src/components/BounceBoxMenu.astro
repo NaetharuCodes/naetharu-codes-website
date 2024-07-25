@@ -1,0 +1,115 @@
+---
+
+---
+
+<div class="container">
+  <ul class="bounceBoxMenu">
+    <div class="bounceBoxMenuToggle">
+      <ion-icon name="apps-outline"></ion-icon>
+    </div>
+    <li style="--i:1" class="bounceShort">
+      <a href="#"><ion-icon name="baseball-outline"></ion-icon></a>
+    </li>
+    <li style="--i:2">
+      <a href="#"><ion-icon name="camera-outline"></ion-icon></a>
+    </li>
+    <li style="--i:3">
+      <a href="#"><ion-icon name="cloud-outline"></ion-icon></a>
+    </li>
+    <li style="--i:4">
+      <a href="#"><ion-icon name="cellular-outline"></ion-icon></a>
+    </li>
+  </ul>
+</div>
+
+<style>
+  .container {
+    margin-top: 32px;
+    padding: 16px;
+    box-sizing: border-box;
+    background: rgb(30, 30, 30);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    min-height: 320px;
+  }
+
+  li {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 0 10px 0 10px;
+    transform-origin: calc(40px);
+    opacity: 0;
+  }
+
+  li:hover {
+    color: rgb(194 65 12);
+    border: 1px solid rgb(194 65 12);
+  }
+
+  .bounceBoxMenu {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 260px;
+    height: 260px;
+  }
+
+  .bounceBoxMenuToggle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: transform 0.4s;
+    color: white;
+  }
+
+  .bounceBoxMenu.active li {
+    transform: translateX(60px) translateY(calc(40px * var(--i) - 100px))
+      rotate(90deg) rotateZ(-90deg);
+    opacity: 1;
+  }
+</style>
+
+<script>
+  console.log("running");
+
+  let squareToggle = document.querySelector(".bounceBoxMenuToggle");
+  let squareMenu = document.querySelector(".bounceBoxMenu");
+
+  console.log(squareMenu);
+
+  if (squareToggle) {
+    console.log("inside");
+
+    squareToggle.onclick = function () {
+      console.log("toggle");
+      squareMenu?.classList.toggle("active");
+    };
+  }
+</script>
+
+<!-- ICON IMPORTS -->
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
