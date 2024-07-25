@@ -59,7 +59,7 @@ a man wearing a tuxedo
 ```
 
 Let's generate our first image. We should get something that looks like this:
-![SD 1.5 image of man in a tux](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/09678fd7-a5d9-4754-ac9a-b88c01053500/512sqare)
+![SD 1.5 image of man in a tux](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/09678fd7-a5d9-4754-ac9a-b88c01053500/XLSquare)
 
 Your specific image will be different, as the image we get depends on the seed that is randomly chosen. However, you should see something similar. It's fine, but hardly an impressive image. Let's take a moment to see if we can improve it.
 
@@ -69,7 +69,7 @@ Before we make any more images, we should also adjust the Batch Count. This tell
 
 For now, let's set our size to 512 wide, and 768 high since a portrait orientation makes sense for a picture of a person. And the batch count to four (4) images. Press create a again, and see what we get.
 
-![Grid of four men in tuxs](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/5b6af2fe-b44b-476a-a84d-d46196194d00/512sqare)
+![Grid of four men in tuxs](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/5b6af2fe-b44b-476a-a84d-d46196194d00/XLSquare)
 
 Right away, we are getting better simply thanks to the extra resolution, and the better format. We can even try to bump up the size further. While SD 1.5 is technically limited to 768 pixels in any dimension, my testing shows that good results can be had up to a size of 768 x 1024. You will find more errors in some images of this size. The AI model is not able to observe the whole image at once at this size, and so it can sometimes get lost and create duplicate elements, or tile parts of the image. But these occurances are infrequent enough to warrant using some SD 1.5 models at this higher resolution provided your GPU is fast enough.
 
@@ -97,15 +97,15 @@ cartoon, a man wearing a tuxedo, crosshatching
 
 Trying these prompts out you can see we get some really interesting results. The first one seems to give us a similar image to before, but with a bit more style to it.
 
-![cinematic photo of a man in a tux](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/9fec798d-6dcc-45c1-6049-950133416100/768portrait)
+![cinematic photo of a man in a tux](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/9fec798d-6dcc-45c1-6049-950133416100/XLPortrait)
 
 The second one gives us a nice traditional painting look. However we also seem to have introduced an actual oil painting into the image, which is NOT what we wanted.
 
-![oil painting photo of a man in a tux](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/9b2819f2-0f5b-4462-3659-edaaa7498d00/768portrait)
+![oil painting photo of a man in a tux](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/9b2819f2-0f5b-4462-3659-edaaa7498d00/XLPortrait)
 
 And our third one we have a nice cartoon man, with noticable crosshatching in the image.
 
-![oil painting photo of a man in a tux](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/608af31d-0570-4b87-dc5a-4bfd9f21cc00/768portrait)
+![oil painting photo of a man in a tux](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/608af31d-0570-4b87-dc5a-4bfd9f21cc00/XLPortrait)
 
 In all I think these are a sizable improvement from our original small image. They are more interesting, and are moving in the direction of being usable. But they do have some flaws that we would need to iron our further. This is where negative prompts can help a great deal. Let's revisit our oil painting example. The painterly style is good, and captures what we were asking for. But we don't want an oil painting in the image. We want an image in the style of an oil painting. To address this we have two obvious routes.
 
@@ -130,7 +130,7 @@ As with SD 1.5 I prefer to work in the portrait / landscape aspect ratios. They 
 
 Load up our new model, set the resolution to the new portrait sizing, and re-run our prompts.
 
-![SDXL Tux Man](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/24d5a35a-7d20-43d5-2195-3abe61f73400/SDTall)
+![SDXL Tux Man](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/24d5a35a-7d20-43d5-2195-3abe61f73400/XLPortrait)
 
 Right away, we can see the vast improvement from the 1.5 model. The image quality is much better. The artistic content of the images is far more convicing. The model has a good grasp of brushwork, lighting, form.
 
