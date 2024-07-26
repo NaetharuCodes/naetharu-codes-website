@@ -1,0 +1,75 @@
+---
+
+---
+
+<div id="ball-menu-container" class="container">
+  <div id="menu-box">
+    <h2>Alert Menu!</h2>
+    <p>Some key information that you need to know!</p>
+  </div>
+</div>
+
+<style>
+  .container {
+    margin: 32px 0 32px 0;
+    position: relative;
+    height: 300px;
+    background-color: rgb(30, 30, 30);
+  }
+
+  #menu-box {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    color: rgb(30, 30, 30);
+    background-color: rgb(30, 30, 30);
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    transition: 0.6s;
+    cursor: pointer;
+    padding: 16px;
+  }
+
+  #menu-box:hover {
+    background-color: rgb(194 65 12);
+    color: rgb(194 65 12);
+  }
+
+  #menu-box.active {
+    border-radius: 4px;
+    top: 16%;
+    left: 30%;
+    width: 300px;
+    height: 200px;
+    background-color: brown;
+    transform: rotate(360deg);
+  }
+
+  #menu-box.active:hover {
+    color: black;
+  }
+
+  #menu-box.active h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  p {
+    font-size: small;
+    text-align: left;
+  }
+</style>
+
+<script lang="ts">
+  const container = document.getElementById("menu-box");
+
+  if (container) {
+    container.addEventListener("click", () => {
+      container.classList.toggle("active");
+    });
+  }
+</script>
