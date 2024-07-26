@@ -6,28 +6,28 @@
   <ul class="menu">
     <div class="menuToggle"><ion-icon name="apps-outline"></ion-icon></div>
     <li style="--i:0">
-      <a href="#"><ion-icon name="add-outline"></ion-icon></a>
+      <button><ion-icon name="add-outline"></ion-icon></button>
     </li>
     <li style="--i:1">
-      <a href="#"><ion-icon name="baseball-outline"></ion-icon></a>
+      <button><ion-icon name="baseball-outline"></ion-icon></button>
     </li>
     <li style="--i:2">
-      <a href="#"><ion-icon name="camera-outline"></ion-icon></a>
+      <button><ion-icon name="camera-outline"></ion-icon></button>
     </li>
     <li style="--i:3">
-      <a href="#"><ion-icon name="cloud-outline"></ion-icon></a>
+      <button><ion-icon name="cloud-outline"></ion-icon></button>
     </li>
     <li style="--i:4">
-      <a href="#"><ion-icon name="cellular-outline"></ion-icon></a>
+      <button><ion-icon name="cellular-outline"></ion-icon></button>
     </li>
     <li style="--i:5">
-      <a href="#"><ion-icon name="file-tray-stacked-outline"></ion-icon></a>
+      <button><ion-icon name="file-tray-stacked-outline"></ion-icon></button>
     </li>
     <li style="--i:6">
-      <a href="#"><ion-icon name="ice-cream-outline"></ion-icon></a>
+      <button><ion-icon name="ice-cream-outline"></ion-icon></button>
     </li>
     <li style="--i:7">
-      <a href="#"><ion-icon name="american-football-outline"></ion-icon></a>
+      <button><ion-icon name="american-football-outline"></ion-icon></button>
     </li>
   </ul>
 </div>
@@ -66,7 +66,7 @@
     color: white;
   }
 
-  .menu li a {
+  .menu li button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,8 +79,17 @@
     transition-delay: 0.2s;
   }
 
-  .menu.active li a {
+  .menu.active li button {
     color: white;
+    transition: hover 0.2s;
+  }
+
+  .menu.active li button:hover {
+    color: rgb(194 65 12);
+  }
+
+  .menu.active li button:active {
+    color: rgb(202, 115, 80);
   }
 
   .menu.active li {
