@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/MarkdownPostLayout.astro
-title: "Python for Machine Learning"
+title: "Prisma ORM"
 pubDate: 20/02/2024
 description: "Advantages of Prisma."
 author: "James Bridge"
