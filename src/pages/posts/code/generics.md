@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/MarkdownPostLayout.astro
-title: "Database Choices: SqLite vs PostgreSQL"
+title: "Generics in TypeScript"
 pubDate: 10/06/2024
 description: "Generics in Typescript."
 author: "James Bridge"
