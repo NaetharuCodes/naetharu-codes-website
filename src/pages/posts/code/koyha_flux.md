@@ -1,7 +1,7 @@
 ---
 layout: ../../../layouts/MarkdownPostLayout.astro
 title: "Files for Flux Training in Kohya_SS"
-pubDate: 10/06/2024
+pubDate: 4/09/2024
 description: "Files for Flux training in Kohya_SS."
 author: "James Bridge"
 url: "flux-training-files"
