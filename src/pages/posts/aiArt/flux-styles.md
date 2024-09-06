@@ -19,10 +19,13 @@ tags:
 ![Hollywood Blockbuster](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/63cd0869-f1b1-4b9b-c813-6ccca292c300/XLLandscape)
 
 2. **1960s Pop Art**: Bold, flat colors with heavy black outlines, inspired by the works of Roy Lichtenstein and Andy Warhol.
+![1960s Pop Art](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/ed282545-e828-4725-1174-157fc27e9900/XLLandscape)
 
 3. **Art Nouveau Poster**: Elegant, flowing lines with natural motifs and muted color palettes, similar to Alphonse Mucha's iconic designs.
+![Art Nouveau Poster](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/962230a9-1358-417f-6f4e-61eff05e7b00/XLLandscape)
 
 4. **Cyberpunk Cityscape**: Neon-lit urban landscapes with a gritty, high-tech aesthetic, reminiscent of Blade Runner or Ghost in the Shell.
+![Cyberpunk Cityscape](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/43c18eb4-c439-4d06-89e5-7eac08540d00/XLLandscape)
 
 5. **Impressionist Landscape**: Soft, painterly brushstrokes capturing the play of light on natural scenes, inspired by Claude Monet's works.
 
