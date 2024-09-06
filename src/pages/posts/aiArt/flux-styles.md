@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/MarkdownPostLayout.astro
-title: "Concept Merging"
+title: "Flux Style Prompts with Examples"
 pubDate: 03/09/2024
 description: "Flux image styles comparison."
 author: "James Bridge"
