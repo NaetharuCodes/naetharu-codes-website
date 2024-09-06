@@ -16,6 +16,7 @@ tags:
 # 100 Detailed Styles for Diffusion Image Generation
 
 1. **1990s Hollywood Blockbuster**: High-contrast lighting, dramatic angles, and larger-than-life action scenes reminiscent of films like Jurassic Park or Independence Day.
+![Hollywood Blockbuster](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/63cd0869-f1b1-4b9b-c813-6ccca292c300/XLLandscape)
 
 2. **1960s Pop Art**: Bold, flat colors with heavy black outlines, inspired by the works of Roy Lichtenstein and Andy Warhol.
 
