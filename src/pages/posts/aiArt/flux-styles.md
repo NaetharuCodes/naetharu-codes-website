@@ -46,7 +46,7 @@ tags:
 ![Abstract Expressionism](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/043e18e5-28d3-4d72-cf78-d44d158fdf00/XLLandscape)
 
 11. **Steampunk Invention**: Victorian-era aesthetics merged with anachronistic technology, featuring brass, gears, and steam-powered machinery.
-![Steampunk Invention](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/6f5ac03a-e200-4054-5170-aa90e0f31700/XLLandscapee)
+![Steampunk Invention](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/6f5ac03a-e200-4054-5170-aa90e0f31700/XLLandscape)
 
 12. **Art Deco Glamour**: Geometric patterns, luxurious materials, and sleek lines characteristic of 1920s and 30s design and architecture.
 ![Art Deco Glamour](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/2e4bc4df-88cf-4eea-eb94-4600239aba00/XLLandscape)
