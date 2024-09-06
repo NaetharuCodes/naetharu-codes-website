@@ -75,21 +75,31 @@ tags:
 20. **Vaporwave Aesthetic**: Pastel colors, glitch effects, and 1990s internet imagery combined with classical sculptures and retro electronics.
 ![Vaporwave Aesthetic](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/0433b408-05b1-485a-1dec-ad24e920d800/XLLandscape)
 
+
+
 21. **Studio Ghibli Animation**: Soft, painterly backgrounds with whimsical character designs and a sense of magic, inspired by Hayao Miyazaki's films.
+![Studio Ghibli Animation](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/5bdce9c0-621e-439c-31ee-b64504bbf600/XLLandscape)
 
 22. **Brutalist Architecture**: Raw concrete forms, repetitive geometric patterns, and a stark, monumental aesthetic.
+![Brutalist Architecture](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/86197527-3286-4a9f-7d41-8089a4925e00/XLLandscape)
 
 23. **Pop Surrealism**: Whimsical, often dark imagery combining pop culture references with surrealist elements, inspired by artists like Mark Ryden.
+![Pop Surrealism](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/6ff9f39f-13dd-4baf-4f0e-503a264daf00/XLLandscape)
 
 24. **Dutch Golden Age Still Life**: Richly detailed arrangements of flowers, food, and objects with dramatic lighting and symbolic meanings.
+![Dutch Golden Age Still Life](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/3987f2ad-8106-4736-3014-3f99faa66f00/XLLandscape)
 
 25. **Retrofuturism**: 1950s and 60s visions of the future, featuring ray guns, flying cars, and sleek, atomic-age design.
+![Vaporwave Aesthetic](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/0433b408-05b1-485a-1dec-ad24e920d800/XLLandscape)
 
 26. **Street Art Mural**: Bold, graphic designs with spray paint textures and urban themes, inspired by artists like Banksy or Shepard Fairey.
+![Street Art Mural](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/81f474f7-d5ca-4696-ec65-e0da028c4000/XLLandscape)
 
 27. **Rococo Opulence**: Ornate, pastel-colored scenes with elaborate ornamentation and whimsical themes, reminiscent of 18th-century French art.
+![Street Art Mural](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/e3f054a4-7261-40bc-ace8-843244549b00/XLLandscape)
 
 28. **Isometric Pixel Art**: Detailed, colorful scenes rendered in an isometric view using pixel-based graphics, popular in indie games.
+![Isometric Pixel Art](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/d2a7576b-ede6-496c-23a3-7d7fa0ee9400/XLLandscape)
 
 29. **Post-Apocalyptic Wasteland**: Desolate landscapes with ruined structures, makeshift vehicles, and survival gear, inspired by Mad Max or Fallout.
 
