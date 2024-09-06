@@ -52,20 +52,28 @@ tags:
 ![Art Deco Glamour](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/2e4bc4df-88cf-4eea-eb94-4600239aba00/XLLandscape)
 
 13. **Surrealist Dreamscape**: Bizarre juxtapositions and distorted reality, inspired by the works of Salvador Dalí or René Magritte.
+![Surrealist Dreamscape](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/1446203b-60eb-4fcd-70b7-9a305ef03d00/XLLandscape)
 
 14. **Pixar Animation**: Bright, colorful 3D renderings with exaggerated features and playful character designs.
+![Pixar Animation](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/1b3fb3ab-b963-495e-cb42-366517f2a700/XLLandscape)
 
 15. **Gothic Horror**: Dark, brooding scenes with gothic architecture, supernatural elements, and a sense of impending doom.
+![Gothic Horror](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/108444f2-833a-42ad-9fb1-40679ad11200/XLLandscape)
 
 16. **Watercolor Sketch**: Loose, flowing brushstrokes with transparent colors and visible paper texture, like a travel journal illustration.
+![Watercolor Sketch](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/2bd2c3b6-3a10-4cf2-cd8a-b50997482300/XLLandscape)
 
 17. **Bauhaus Geometry**: Simple geometric shapes, primary colors, and clean lines inspired by the influential German design school.
+![Bauhaus Geometry](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/0cc1dbfc-b05f-48dd-0ca9-dc60e398dc00/XLLandscape)
 
 18. **Psychedelic Rock Poster**: Swirling, colorful patterns with distorted typography, reminiscent of 1960s concert posters.
+![Psychedelic Rock Poster](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/76ff4a84-6a8d-4367-d4f5-0dfba7c55100/XLLandscape)
 
 19. **Minimalist Line Art**: Simple, continuous line drawings with minimal detail, focusing on essential forms and negative space.
+![Minimalist Line Art](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/3aa8ff60-e74f-4bd6-15c0-1513655bab00/XLLandscape)
 
 20. **Vaporwave Aesthetic**: Pastel colors, glitch effects, and 1990s internet imagery combined with classical sculptures and retro electronics.
+![Vaporwave Aesthetic](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/0433b408-05b1-485a-1dec-ad24e920d800/XLLandscape)
 
 21. **Studio Ghibli Animation**: Soft, painterly backgrounds with whimsical character designs and a sense of magic, inspired by Hayao Miyazaki's films.
 
