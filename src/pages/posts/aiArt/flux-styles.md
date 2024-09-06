@@ -28,12 +28,16 @@ tags:
 ![Cyberpunk Cityscape](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/43c18eb4-c439-4d06-89e5-7eac08540d00/XLLandscape)
 
 5. **Impressionist Landscape**: Soft, painterly brushstrokes capturing the play of light on natural scenes, inspired by Claude Monet's works.
+![Impressionist Landscape](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/6ce0ed05-dd55-4ca0-12a3-f5bf582e1b00/XLLandscape)
 
 6. **Film Noir**: High-contrast black and white imagery with dramatic shadows and moody lighting, evoking 1940s detective films.
+![Film Noir](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/543d6aee-2744-4c53-8d5a-0a68cdad5700/XLLandscape)
 
 7. **Ukiyo-e Woodblock Print**: Flat colors, bold outlines, and stylized compositions reminiscent of Japanese artists like Hokusai or Hiroshige.
+![Ukiyo-e Woodblock Print](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/03240ada-410d-4287-b180-8e73a2c6f100/XLLandscape)
 
 8. **1980s Synthwave**: Retro-futuristic scenes with neon grids, sunsets, and chrome text, inspired by 80s album covers and video games.
+![1980s Synthwave](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/89a95239-a37f-4c04-9a3a-a79bcd2a4000/XLLandscape)
 
 9. **Renaissance Portrait**: Richly detailed paintings with soft lighting, realistic facial features, and ornate clothing, inspired by artists like Leonardo da Vinci.
 
