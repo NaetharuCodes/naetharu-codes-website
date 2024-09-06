@@ -40,12 +40,16 @@ tags:
 ![1980s Synthwave](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/89a95239-a37f-4c04-9a3a-a79bcd2a4000/XLLandscape)
 
 9. **Renaissance Portrait**: Richly detailed paintings with soft lighting, realistic facial features, and ornate clothing, inspired by artists like Leonardo da Vinci.
+![Renaissance Portrait](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/29928744-4c96-4003-6ff9-f428f9b4ca00/XLLandscape)
 
 10. **Abstract Expressionism**: Large-scale, non-representational works with bold gestures and emotive color use, reminiscent of Jackson Pollock or Willem de Kooning.
+![Abstract Expressionism](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/043e18e5-28d3-4d72-cf78-d44d158fdf00/XLLandscape)
 
 11. **Steampunk Invention**: Victorian-era aesthetics merged with anachronistic technology, featuring brass, gears, and steam-powered machinery.
+![Steampunk Invention](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/6f5ac03a-e200-4054-5170-aa90e0f31700/XLLandscapee)
 
 12. **Art Deco Glamour**: Geometric patterns, luxurious materials, and sleek lines characteristic of 1920s and 30s design and architecture.
+![Art Deco Glamour](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/2e4bc4df-88cf-4eea-eb94-4600239aba00/XLLandscape)
 
 13. **Surrealist Dreamscape**: Bizarre juxtapositions and distorted reality, inspired by the works of Salvador Dalí or René Magritte.
 
