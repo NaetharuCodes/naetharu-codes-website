@@ -75,8 +75,6 @@ tags:
 20. **Vaporwave Aesthetic**: Pastel colors, glitch effects, and 1990s internet imagery combined with classical sculptures and retro electronics.
 ![Vaporwave Aesthetic](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/0433b408-05b1-485a-1dec-ad24e920d800/XLLandscape)
 
-
-
 21. **Studio Ghibli Animation**: Soft, painterly backgrounds with whimsical character designs and a sense of magic, inspired by Hayao Miyazaki's films.
 ![Studio Ghibli Animation](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/5bdce9c0-621e-439c-31ee-b64504bbf600/XLLandscape)
 
@@ -101,49 +99,74 @@ tags:
 28. **Isometric Pixel Art**: Detailed, colorful scenes rendered in an isometric view using pixel-based graphics, popular in indie games.
 ![Isometric Pixel Art](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/d2a7576b-ede6-496c-23a3-7d7fa0ee9400/XLLandscape)
 
+
+
+
 29. **Post-Apocalyptic Wasteland**: Desolate landscapes with ruined structures, makeshift vehicles, and survival gear, inspired by Mad Max or Fallout.
+![Post-Apocalyptic Wasteland](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/9cf22c90-587f-4d88-0f12-a4a8a026be00/XLLandscape)
 
 30. **Art Brut**: Raw, unconventional artworks with a naive or outsider aesthetic, inspired by artists like Jean Dubuffet.
+![Art Brut](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/b54d6065-fd57-44f6-8087-c665cb421800/XLLandscape)
 
 31. **Biomechanical Fusion**: Organic forms merged with mechanical elements, inspired by the works of H.R. Giger.
+![Bioemechanical Fusion](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/9aa1fee7-6e03-4651-7833-989ca20bd000/XLLandscape)
 
 32. **Memphis Design**: Colorful, geometric patterns with playful shapes and bold contrasts, characteristic of 1980s postmodern design.
+![Memphis Design](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/81f1ded9-019e-4fcb-e449-9ac35cb42900/XLLandscape)
 
 33. **Ukranian Folk Art**: Vibrant floral patterns, stylized birds, and geometric motifs inspired by traditional Petrykivka painting.
+![Example Image](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/941bab7a-db9e-4f3c-2937-53845f5fbc00/XLLandscape)
 
 34. **Magical Realism**: Realistic scenes with subtle, fantastical elements, inspired by the literary works of Gabriel García Márquez.
+![Magical Realism](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/2b3ff4e6-c143-4b86-1b51-b38b21a0a800/XLLandscape)
 
 35. **Afrofuturism**: Futuristic themes blended with African aesthetics and mythology, inspired by works like Black Panther.
+![Afrofuturism](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/89378e02-8afb-4261-fa05-83ea4ab3c200/XLLandscape)
 
 36. **Wes Anderson Cinematography**: Symmetrical compositions, pastel color palettes, and whimsical set designs characteristic of the director's films.
+![Wes Anderson Cinematography](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/b86fe17d-b0a2-4bdf-1a36-a25cbb9e4a00/XLLandscape)
 
 37. **Vintage Travel Poster**: Bold, simplified landscapes with stylized typography, reminiscent of mid-20th century tourism advertisements.
+![Vintage Travel Poster](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/391a91ac-620c-4309-24d3-18c41d1b4e00/XLLandscape)
 
 38. **Glitch Art**: Digital or analog errors used as a visual aesthetic, featuring distorted images, fragmented pixels, and visual artifacts.
+![Glitch Art](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/b86fe17d-b0a2-4bdf-1a36-a25cbb9e4a00/XLLandscape)
 
 39. **Fauvism**: Vibrant, non-naturalistic colors and simplified forms, inspired by artists like Henri Matisse and André Derain.
+![Fauvism](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/6ded13b3-882e-44ae-ec21-9734f3939800/XLLandscape)
 
 40. **Low Poly 3D**: Simplified 3D renderings with visible polygonal structures, popular in modern game design and illustration.
+![Low Poly 3D](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/29485cd4-1de1-4781-47bb-8a7b99e96600/XLLandscape)
 
 41. **Pointillism**: Images composed entirely of small, distinct dots of color, inspired by the technique of Georges Seurat.
+![Pointillism](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/1b9ebe6a-440d-4265-bd9f-08208c7ba600/XLLandscape)
 
 42. **Medieval Illuminated Manuscript**: Ornate illustrations with gold leaf accents and decorative borders, reminiscent of medieval religious texts.
+![Medieval Illuminated Manuscript](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/04354fc1-ac8f-427b-00f5-4d632f155e00/XLLandscape)
 
 43. **Synthwave Sunset**: Stylized landscapes with neon grids, palm trees, and dramatic sunsets, inspired by 1980s electronic music aesthetics.
+![Synthwave Sunset](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/e3baa552-a89a-4b71-7129-65489b24c600/XLLandscape)
 
 44. **Baroque Chiaroscuro**: Dramatic contrast between light and dark, with rich details and emotional intensity, inspired by Caravaggio.
+![Baroque Chiaroscuro](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/61536855-af2e-4535-7958-b84e5eab5300/XLLandscape)
 
 45. **Constructivist Propaganda**: Bold geometric shapes, limited color palettes, and dynamic compositions inspired by early Soviet graphic design.
+![Constructivist Propaganda](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/57e0cf68-4c10-48ac-31ab-65eee2cf2a00/XLLandscape)
 
 46. **Ethereal Double Exposure**: Dreamlike images created by blending two or more photographs, often featuring natural elements and portraits.
+![Ethereal Double Exposure](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/6d6c8391-0833-448f-a17e-9209bc04b400/XLLandscape)
 
 47. **Grunge Aesthetic**: Raw, distressed textures with a DIY feel, inspired by 1990s alternative music culture and urban decay.
+![Example Image](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/5bb3ea4a-aa15-4b8e-e312-861866e56700/XLLandscape)
 
 48. **Futurism**: Dynamic, fragmented forms depicting motion and speed, inspired by early 20th-century Italian artists.
+![Example Image](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/bd6b3e36-8c8a-4ad8-1fff-ba86f5ac3500/XLLandscape)
 
 49. **Zentangle**: Intricate, abstract patterns created through repetitive, structured patterns, often in black and white.
+![Example Image](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/bd6b3e36-8c8a-4ad8-1fff-ba86f5ac3500/XLLandscape)
 
 50. **Retro Sci-Fi Book Cover**: Dramatic space scenes and alien worlds with bold typography, inspired by 1950s and 60s pulp fiction.
+![Example Image](https://imagedelivery.net/eg6Xqa-jIrYvZBm8oCXnhg/bd6b3e36-8c8a-4ad8-1fff-ba86f5ac3500/XLLandscape)
 
 51. **Bauhaus Photography**: Experimental compositions with unconventional angles and abstract forms, inspired by László Moholy-Nagy.
 
