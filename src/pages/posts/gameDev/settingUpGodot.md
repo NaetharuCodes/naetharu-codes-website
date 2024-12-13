@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/MarkdownPostLayout.astro
-title: "Setting Up Astro"
+title: "Setting Up Godot Game Engine"
 pubDate: 13/12/2024
 description: "How to set up Godot ready for your first game-dev project"
 author: "James Bridge"
