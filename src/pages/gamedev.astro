@@ -1,0 +1,51 @@
+---
+import LinksList from "../components/LinksList.astro";
+import List from "../components/List.astro";
+import Title from "../components/Title.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// Type declaration for the frontmatter structure
+interface Frontmatter {
+  title: string;
+  url: string;
+  episode: number;
+}
+
+// Get all posts
+const allPosts = await Astro.glob("./posts/gameDev/*.md");
+
+// Map and sort the posts by episode number
+const posts = allPosts
+  .map((post: any) => ({
+    title: post.frontmatter.title,
+    url: post.url,
+    episode: post.frontmatter.episode,
+  }))
+  .sort((a: any, b: any) => a.episode - b.episode);
+---
+
+<BaseLayout>
+  <div
+    class="text-white w-full max-w-[800px] m-auto grow flex flex-col items-center justify-start p-4"
+  >
+    <h2>Game Dev Journey</h2>
+  </div>
+  <p>
+    I'm new to game-dev. I've always liked video games, ever since getting a
+    second-hand Atari 2600 for my 4th birthday. And so it seems high time I
+    tried my hand at making some of my own. So this will be my journey. I'm
+    going to start with the open source game-engine Godot. It seems well
+    supported, and reasonably light weight. It also uses GD-Script which is very
+    similar to Python.
+  </p>
+  <p>
+    I'm going to challenge myself to learn a new concept and implement a new
+    feature each day. And I'll document that in these blogs (and the
+    accompanying videos that I'll host up on YouTube). The idea being that this
+    will become both a fun document of my progress, but also a reasonably easily
+    searchable resource of tutorials on how to do different things in the
+    engine.
+  </p>
+  <Title text="Game Dev Journey Articles" />
+  <LinksList links={posts} />
+</BaseLayout>
